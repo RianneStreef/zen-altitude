@@ -1,0 +1,94 @@
+:root {
+  --color-highlight: #ed20ce;
+  --color-shadow: #eaeaea;
+  --color-text: #fff;
+  --color-background: #000;
+}
+
+html {
+  font-size: calc(60% + 0.8vmin);
+}
+
+* {
+  font-size: 1rem;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logo {
+  width: 30px;
+  margin: 20px;
+}
+
+.flag {
+  width: 25px;
+  margin: 5px;
+}
+
+.opaque {
+  opacity: 100%;
+}
+
+.fade {
+  opacity: 50%;
+}
+
+.invisible-button {
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  margin: 10px;
+}
+
+.header-placeholder {
+  height: 80px;
+}
+
+.banner-1 {
+  width: 100vw;
+  height: 200px;
+  background-image: url("../images/fleurs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 50px 0;
+}
+
+.banner-2 {
+  width: 100vw;
+  height: 200px;
+  background-image: url("../images/banner-mountain.jpg");
+  background-size: cover;
+  margin: 50px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

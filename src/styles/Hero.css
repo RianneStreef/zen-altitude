@@ -1,0 +1,14 @@
+.hero {
+  min-height: 100vh;
+}
+
+#background-video {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
