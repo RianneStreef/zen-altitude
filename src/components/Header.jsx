@@ -34,9 +34,24 @@ const Header = (props) => {
       </div>
       <ul className="links hidden-mobile">
         <li>
-          <Link to="/" className="nav-link">
-            Welcome
+          <Link to="/#about" className="nav-link">
+            Zen Altitude
           </Link>
+        </li>
+        <li>
+          <Link to="/#soins" className="nav-link">
+            {languageToUse.soins}
+          </Link>
+        </li>
+        <li>
+          <Link to="/#contact" className="nav-link">
+            Contact
+          </Link>
+        </li>
+        <li>
+          <a href="../pages/prix.pdf" className="nav-link" target="blank">
+            {languageToUse.prices}
+          </a>
         </li>
 
         <li>

@@ -35,6 +35,10 @@ h3 {
   font-size: 1.3rem;
 }
 
+ul {
+  list-style: none;
+}
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -77,6 +81,10 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
 .banner-2 {
@@ -87,8 +95,16 @@ h3 {
   margin: 50px 0;
 }
 
-.button-container {
+.center-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button {
+  background-color: var(--color-highlight);
+  border: none;
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
 }

@@ -11,7 +11,7 @@ const Intro = (props) => {
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
   return (
-    <div className="intro">
+    <div className="intro" id="about">
       <div className="intro-text">{languageToUse.introText}</div>
       <img src={introImage} alt="" className="intro-image" />
     </div>

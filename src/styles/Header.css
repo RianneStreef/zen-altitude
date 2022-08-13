@@ -2,7 +2,7 @@
   position: fixed;
   background-color: var(--color-background-light);
   width: 100vw;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .header-logo {
-  width: 10%;
+  width: 3%;
   margin: 10px;
 }
 
@@ -26,6 +26,9 @@
   color: var(--color-text-dark);
   text-decoration: none;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-link {

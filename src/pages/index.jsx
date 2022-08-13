@@ -29,9 +29,9 @@ const IndexPage = function (props) {
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
       <div className="header-placeholder" />
-      <Hero />
+      <Hero language={language} languageToUse={languageToUse} />
       <Intro language={language} languageToUse={languageToUse} />
-      <div className="banner-1" />
+      <div className="banner-1">"La patience est la clé du bien-être."</div>
       <Products language={language} languageToUse={languageToUse} />
       <div className="banner-2" />
       <Contact language={language} languageToUse={languageToUse} />

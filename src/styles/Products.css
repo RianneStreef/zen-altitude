@@ -56,10 +56,12 @@
   .products-container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .products-container > * {
-    width: 20vw;
+    width: 40vw;
+    height: 30vw;
     margin: 2vw;
   }
 }

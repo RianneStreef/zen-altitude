@@ -1,3 +1,35 @@
 .footer {
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contact,
+.footer-soins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: 30px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+  }
+  .footer > * {
+    width: 30%;
+  }
 }

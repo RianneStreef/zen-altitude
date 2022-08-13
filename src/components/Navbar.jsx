@@ -77,6 +77,34 @@ const Navbar = (props) => {
             Welcome
           </Link>
         </li>
+        <li>
+          <Link
+            to="/#soins"
+            className="nav-link"
+            onClick={() => setOpen(!open)}
+          >
+            {languageToUse.soins}
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/#contact"
+            className="nav-link"
+            onClick={() => setOpen(!open)}
+          >
+            Contact
+          </Link>
+        </li>
+        <li>
+          <a
+            href="../pages/prix.pdf"
+            className="nav-link"
+            target="blank"
+            onClick={() => setOpen(!open)}
+          >
+            {languageToUse.prices}
+          </a>
+        </li>
 
         <li className="social-links-header">
           <div className="nav-item-language">
@@ -92,13 +120,6 @@ const Navbar = (props) => {
               onClick={() => handleSetLanguage("french")}
               className={`flag ${
                 languageToUse.language === "french" ? "opaque" : "fade"
-              } `}
-            />
-            <img
-              src={flagNl}
-              onClick={() => handleSetLanguage("dutch")}
-              className={`flag ${
-                languageToUse.language === "dutch" ? "opaque" : "fade"
               } `}
             />
           </div>

@@ -68,11 +68,7 @@ const Contact = (props) => {
               ></textarea>
             </p>
             <div className="center-button-container">
-              <button
-                className="custom-button"
-                type="submit"
-                value="Submit message"
-              >
+              <button className="button" type="submit" value="Submit message">
                 {languageToUse.send}
               </button>
             </div>
