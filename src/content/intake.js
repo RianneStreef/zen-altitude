@@ -7,7 +7,7 @@ const intakeInfo = {
   siteName: "Template site",
   highlightColor: "#ff00ff",
 
-  taxNumber: "1313",
+  taxNumber: "84817424900013",
 };
 
 export default intakeInfo;

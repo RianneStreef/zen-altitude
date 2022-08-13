@@ -13,7 +13,7 @@
 
 @media only screen and (min-width: 768px) {
   .intro {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     flex-direction: row;
   }
 

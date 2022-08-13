@@ -2,8 +2,6 @@ import React from "react";
 
 import { content } from "../content/languages";
 
-import product1Image from "../images/pregnant.jpeg";
-
 import "../styles/Products.css";
 
 const Products = (props) => {
@@ -19,25 +17,25 @@ const Products = (props) => {
           <p>{languageToUse.product1Text}</p>
         </div>
         <div className="product-description">
-          <img src={product1Image} alt="" className="product-image" />
+          <div className="product-image product-image-1" />
         </div>
         <div className="product-description">
           <h2>{languageToUse.product2Title}</h2>
           <p>{languageToUse.product2Text}</p>
         </div>
         <div className="product-description">
-          <img src={product1Image} alt="" className="product-image" />
+          <div className="product-image product-image-2" />
         </div>
 
         <div className="product-description">
-          <img src={product1Image} alt="" className="product-image" />
+          <div className="product-image product-image-3" />
         </div>
         <div className="product-description">
           <h2>{languageToUse.product3Title}</h2>
           <p>{languageToUse.product3Text}</p>
         </div>
         <div className="product-description">
-          <img src={product1Image} alt="" className="product-image" />
+          <div className="product-image product-image-4" />
         </div>
         <div className="product-description">
           <h2>{languageToUse.product4Title}</h2>
