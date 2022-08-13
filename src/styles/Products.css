@@ -27,15 +27,29 @@
   background-image: url("../images/massage.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 .product-image-2 {
   background-image: url("../images/child-massage.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 .product-image-3 {
   background-image: url("../images/soin-jambes.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 .product-image-4 {
   background-image: url("../images/pregnant.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
