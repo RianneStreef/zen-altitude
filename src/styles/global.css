@@ -1,5 +1,5 @@
 :root {
-  --color-highlight: #ed20ce;
+  --color-highlight: #dc3a6f;
   --color-shadow: #eaeaea;
   --color-text: #fff;
   --color-background: #000;
@@ -37,6 +37,7 @@ h3 {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .layout {
@@ -106,5 +107,6 @@ ul {
   border: none;
   color: #fff;
   padding: 20px;
+  margin-top: 50px;
   text-decoration: none;
 }

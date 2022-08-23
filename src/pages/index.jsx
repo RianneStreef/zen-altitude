@@ -28,7 +28,6 @@ const IndexPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
-      <div className="header-placeholder" />
       <Hero language={language} languageToUse={languageToUse} />
       <Intro language={language} languageToUse={languageToUse} />
       <div className="banner-1">"La patience est la clé du bien-être."</div>

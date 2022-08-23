@@ -96,14 +96,9 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li>
-          <a
-            href="../pages/prix.pdf"
-            className="nav-link"
-            target="blank"
-            onClick={() => setOpen(!open)}
-          >
+          <Link to="/price-list" target="blank" onClick={() => setOpen(!open)}>
             {languageToUse.prices}
-          </a>
+          </Link>
         </li>
 
         <li className="social-links-header">

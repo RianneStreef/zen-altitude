@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 
 import Burger from "../components/Burger";
@@ -23,8 +23,27 @@ const Header = (props) => {
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
 
+  let [headerBackground, setHeaderBackground] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollnav);
+
+    function scrollnav() {
+      let y = window.scrollY;
+      let width = window.innerWidth;
+      if (y > 1 && width > 768) {
+        setHeaderBackground(true);
+      } else {
+        setHeaderBackground(false);
+      }
+    }
+  });
+
   return (
-    <div className="header">
+    <div
+      className={`header ${headerBackground ? "header-background" : ""}`}
+      id="navbar"
+    >
       <div className="hidden-desktop">
         <Burger
           language={language}
@@ -32,6 +51,9 @@ const Header = (props) => {
           languageToUse={languageToUse}
         />
       </div>
+      <Link to="/" className="logo-link">
+        <img src={logo} alt="Logo" className="header-logo" />
+      </Link>
       <ul className="links hidden-mobile">
         <li>
           <Link to="/#about" className="nav-link">
@@ -49,9 +71,9 @@ const Header = (props) => {
           </Link>
         </li>
         <li>
-          <a href="../pages/prix.pdf" className="nav-link" target="blank">
+          <Link to="/price-list" className="nav-link">
             {languageToUse.prices}
-          </a>
+          </Link>
         </li>
 
         <li>
@@ -85,9 +107,6 @@ const Header = (props) => {
           </div>
         </li>
       </ul>
-      <Link to="/" className="logo-link">
-        <img src={logo} alt="Logo" className="header-logo" />
-      </Link>
     </div>
   );
 };

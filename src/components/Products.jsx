@@ -17,7 +17,7 @@ const Products = (props) => {
           <h2>{languageToUse.product1Title}</h2>
           <p>{languageToUse.product1Text}</p>
           <div className="center-button-container">
-            <Link to="/" className="button more-info-button">
+            <Link to="/massages" className="button more-info-button">
               {languageToUse.moreInfo}
             </Link>
           </div>
@@ -31,11 +31,20 @@ const Products = (props) => {
         </div>
         <div className="product-description">
           <h2>{languageToUse.product2Title}</h2>
-          <p>{languageToUse.product2Text}</p>
+          <p>
+            {languageToUse.product2Text1}
+            <ul>
+              <li>{languageToUse.product2Li1}</li>
+              <li>{languageToUse.product2Li2}</li>
+              <li>{languageToUse.product2Li3}</li>
+            </ul>
+          </p>
+
+          <p>{languageToUse.product2Text2}</p>
           <div className="center-button-container">
-            <Link to="/" className="button more-info-button">
+            {/* <Link to="/" className="button more-info-button">
               {languageToUse.moreInfo}
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="product-description">
@@ -50,7 +59,7 @@ const Products = (props) => {
         <div className="product-description">
           <div className="product-image product-image-3" />
         </div>
-        <div className="product-description">
+        {/* <div className="product-description">
           <div className="product-image product-image-4" />
         </div>
 
@@ -62,12 +71,12 @@ const Products = (props) => {
               {languageToUse.moreInfo}
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="center-button-container">
-        <a href="../content/pricelist.pdf" target="blank" className="button">
+        <Link to="/price-list" className="button">
           Price List
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,26 +1,56 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import "../styles/Footer.css";
+import { content } from "../content/languages";
+
+import phone from "../images/phone.svg";
+import mail from "../images/mail.svg";
+import location from "../images/location.svg";
+import clock from "../images/clock.svg";
 
 import fb from "../images/fb.svg";
 import insta from "../images/insta.svg";
 
-const Footer = () => {
+const Footer = (props) => {
+  let { language, languageToUse } = props;
+
+  language === "english" ? (languageToUse = content.english) : null;
+  language === "french" ? (languageToUse = content.french) : null;
   return (
     <div className="footer">
       <div className="footer-contact">
         <ul>
-          <li>tel</li>
-          <li>mail</li>
-          <li>horaires</li>
+          <li className="footer-contact-item">
+            <img src={phone} className="footer-contact-icon" alt="" />
+            tel
+          </li>
+          <li className="footer-contact-item">
+            <img src={mail} className="footer-contact-icon" alt="" />
+            mail
+          </li>
+          <li className="footer-contact-item">
+            <img src={location} className="footer-contact-icon" alt="" />
+            location
+          </li>
+          <li className="footer-contact-item">
+            <img src={clock} className="footer-contact-icon" alt="" />
+            horaires
+          </li>
         </ul>
       </div>
       <div className="footer-soins">
         <ul>
-          <li>soins 1</li>
-          <li>soins 2</li>
-          <li>soins 3</li>
-          <li>soins 4</li>
+          <li>
+            <Link to="/massages">{languageToUse.product1Title}</Link>
+          </li>
+
+          <li>
+            <Link to="/#soins">{languageToUse.product2Title}</Link>
+          </li>
+          <li>
+            <Link to="/#soins">{languageToUse.product3Title}</Link>
+          </li>
         </ul>
       </div>
       <div className="footer-social">
