@@ -13,7 +13,7 @@ const Hero = (props) => {
   return (
     <div className="hero">
       <div className="hero-container">
-        <video id="background-video" muted autoplayloop>
+        <video id="background-video" autoPlay muted playsInline loop>
           <source src={heroVideo} type="video/mp4" />
         </video>
         <div className="hero-text">

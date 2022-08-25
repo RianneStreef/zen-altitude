@@ -77,15 +77,16 @@ ul {
 
 .banner-1 {
   width: 100vw;
-  height: 200px;
-  background-image: url("../images/fleurs.jpg");
-  background-size: cover;
+  height: 400px;
+  background-image: url("../images/spa-deco.jpeg");
+  background-size: contain;
   background-repeat: no-repeat;
   margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  background-attachment: fixed;
 }
 
 .banner-2 {
@@ -94,6 +95,7 @@ ul {
   background-image: url("../images/banner-mountain.jpg");
   background-size: cover;
   margin: 50px 0;
+  background-attachment: fixed;
 }
 
 .center-button-container {

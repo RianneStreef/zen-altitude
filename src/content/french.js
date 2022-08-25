@@ -1,7 +1,7 @@
 export const french = {
   language: "french",
 
-  indexTitle: "French title",
+  indexTitle: "Zen Altidude || Les Bellville",
   metaDescription: "French  description",
   metaKeywords: "French  keywords",
 
@@ -51,6 +51,69 @@ export const french = {
   childTitle: "MASSAGE ENFANTS  ( de 5 ans à 12 ans inclus )",
   childText:
     "Manœuvres douces et légères. Permet à l’enfant d’être plus calme et concentré, sécurise et favorise le sommeil, valorise l’estime de soi, améliore la gestion des émotions.",
+
+  soinVisageTitle: "Soin visage",
+  soinVisageFemmeTitle: "SOIN VISAGE FEMME",
+  soinVisageFemme1: "SOIN BELLE NIGELLE",
+  soinVisageFemme2: "SOIN SES’ÂME",
+  soinVisageFemme3: "SECRET DE JEUNESSE A LA FIGUE DE BARBARIE",
+  soinVisageFemme4: "SOIN PURIFIANT BEAUTE D’ORIENT",
+  soinVisageFemme5: "SOIN COUP D’ECLAT",
+  soinVisageFemme6: "FOCUS REGARD",
+  soinVisageFemme7: "PAUSE DE MASQUE AU COLLAGENE",
+  soinVisageFemme7UnderTitle:
+    "(Peut être inclus dans un soin du visage de votre choix femme ou homme)",
+
+  soinVisageFemme1Price: "60 minutes : 80€",
+  soinVisageFemme2Price: "60 minutes : 80€",
+  soinVisageFemme3Price: "60 minutes : 80€",
+  soinVisageFemme4Price: "60 minutes : 80€",
+  soinVisageFemme5Price: "60 minutes : 80€",
+  soinVisageFemme6Price: "25 minutes : 50€",
+  soinVisageFemme7Price1: "Visage entier 20 minutes : 45€",
+  soinVisageFemme7Price2: "Contour des yeux 20 minutes : 35€",
+
+  soinVisageFemme1Effects: "APAISANT, HYDRATANT, UNIFIANT",
+  soinVisageFemme2Effects: "REPARATEUR-NOURRISSANT-HYDRATANT",
+  soinVisageFemme3Effects: "RESTRUCTURANT-REPARATEUR-NOURRISSANT",
+  soinVisageFemme4Effects: "PURIFIANT-OXYGENANT-NETTOYANT",
+  soinVisageFemme5Effects: "ECLATANT-OXYGENANT-UNIFIANT",
+  soinVisageFemme6Effects: "REDENSIFIANT, DEFATIGUANT, PROTECTEUR",
+
+  soinVisageFemme1SkinType: "Peaux sensibles et réactives",
+  soinVisageFemme2SkinType: "Peaux sèches",
+  soinVisageFemme3SkinType: "Peaux sèches et atones",
+  soinVisageFemme4SkinType: "Peaux à problèmes mixtes à grasses",
+  soinVisageFemme5SkinType: "Tous types de peaux",
+
+  soinVisageFemme1Description:
+    "Un soin charme d’orient exclusif pour peaux sensibles à base d’huile de nigelle",
+  soinVisageFemme2Description:
+    "En Inde, le sésame est utilisé pour apaiser l’esprit et apporter un sentiment de bien être",
+  soinVisageFemme3Description:
+    "Le soin de beauté le plus précieux pour garder un grain de peau lisse, ferme et lumineux.",
+  soinVisageFemme4Description:
+    "Pour les peaux asphyxiées afin de retrouver une peau nette et un grain de peau lisse",
+  soinVisageFemme7Description1:
+    "Hydratation extraordinaire et apaisement remarquable de la peau - réduction des irritations de la peau dues à l'exposition au soleil, l'épilation - soin restructurant et régénérant - effet bénéfique dans le traitement des rides - la peau est remarquablement douce.",
+  soinVisageFemme7Description2:
+    "Types de peau : tous et plus particulièrement les peaux irritées, sensibles, sèches, déshydratées et sénescentes",
+
+  soinVisageHommeTitle: "SOIN VISAGE HOMME",
+
+  soinVisageHomme1: "LE SOIN DU BARBIER ",
+  soinVisageHomme2: "L’HOMME",
+  soinVisageHomme3: "BLACK CUMIN ",
+
+  soinVisageHomme1Price: "25 MINUTES : 50€",
+  soinVisageHomme2Price: "25 MINUTES : 50€",
+  soinVisageHomme3Price: "25 MINUTES : 50€",
+
+  soinVisageHomme1Description: "Soin visage éclat de fraicheur et barbe douce",
+  soinVisageHomme2Description:
+    "Soin pour tous types de peaux, nettoyant et hydratant",
+  soinVisageHomme3Description:
+    "Soin pour les peaux sensibles et réactives, Apaisant et hydratant ",
 
   contact: "Contact",
   contactIntro: "Contact intro",

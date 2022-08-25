@@ -30,7 +30,9 @@ const IndexPage = function (props) {
       </Helmet>
       <Hero language={language} languageToUse={languageToUse} />
       <Intro language={language} languageToUse={languageToUse} />
-      <div className="banner-1">"La patience est la clé du bien-être."</div>
+      <div className="banner-1">
+        {/* "La patience est la clé du bien-être." */}
+      </div>
       <Products language={language} languageToUse={languageToUse} />
       <div className="banner-2" />
       <Contact language={language} languageToUse={languageToUse} />

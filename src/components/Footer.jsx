@@ -12,6 +12,8 @@ import clock from "../images/clock.svg";
 import fb from "../images/fb.svg";
 import insta from "../images/insta.svg";
 
+import logo from "../images/icon.png";
+
 const Footer = (props) => {
   let { language, languageToUse } = props;
 
@@ -19,39 +21,52 @@ const Footer = (props) => {
   language === "french" ? (languageToUse = content.french) : null;
   return (
     <div className="footer">
-      <div className="footer-contact">
-        <ul>
-          <li className="footer-contact-item">
-            <img src={phone} className="footer-contact-icon" alt="" />
-            tel
-          </li>
-          <li className="footer-contact-item">
-            <img src={mail} className="footer-contact-icon" alt="" />
-            mail
-          </li>
-          <li className="footer-contact-item">
-            <img src={location} className="footer-contact-icon" alt="" />
-            location
-          </li>
-          <li className="footer-contact-item">
-            <img src={clock} className="footer-contact-icon" alt="" />
-            horaires
-          </li>
-        </ul>
+      <div>
+        <img src={logo} alt="" className="footer-logo" />
       </div>
-      <div className="footer-soins">
-        <ul>
-          <li>
-            <Link to="/massages">{languageToUse.product1Title}</Link>
-          </li>
+      <div className="footer-info">
+        <div className="footer-contact">
+          <p>Contact:</p>
+          <ul>
+            <li className="footer-contact-item">
+              <img src={phone} className="footer-contact-icon" alt="" />
+              tel
+            </li>
+            <li className="footer-contact-item">
+              <img src={mail} className="footer-contact-icon" alt="" />
+              mail
+            </li>
+            <li className="footer-contact-item">
+              <img src={location} className="footer-contact-icon" alt="" />
+              location
+            </li>
+            <li className="footer-contact-item">
+              <img src={clock} className="footer-contact-icon" alt="" />
+              horaires
+            </li>
+          </ul>
+        </div>
+        <div className="footer-soins">
+          <p>{languageToUse.soins}:</p>
+          <ul>
+            <li className="footer-link-container">
+              <Link to="/massages" className="footer-link">
+                {languageToUse.product1Title}
+              </Link>
+            </li>
 
-          <li>
-            <Link to="/#soins">{languageToUse.product2Title}</Link>
-          </li>
-          <li>
-            <Link to="/#soins">{languageToUse.product3Title}</Link>
-          </li>
-        </ul>
+            <li className="footer-link-container">
+              <Link to="/#soins" className="footer-link">
+                {languageToUse.product2Title}
+              </Link>
+            </li>
+            <li className="footer-link-container">
+              <Link to="/#soins" className="footer-link">
+                {languageToUse.product3Title}
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="footer-social">
         <ul className="footer-social-list">

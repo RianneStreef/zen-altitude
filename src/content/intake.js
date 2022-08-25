@@ -1,11 +1,11 @@
 const intakeInfo = {
-  companyName: "Template",
-  companyAddress: "Template Street",
-  domainName: "www.template.com",
+  companyName: "Zen Altitude",
+  companyAddress: "Les Belleville",
+  domainName: "www.zenaltitude-lesbelleville.com",
   contactEmail: "",
 
-  siteName: "Template site",
-  highlightColor: "#ff00ff",
+  siteName: "Zen Altitude",
+  highlightColor: "#dc3a6f",
 
   taxNumber: "84817424900013",
 };

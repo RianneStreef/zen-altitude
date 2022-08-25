@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "gatsby";
+
 import { Helmet } from "react-helmet";
 
 import "../styles/massages.css";
@@ -32,6 +34,11 @@ const MassagesPage = function (props) {
         <p>{languageToUse.pregnantText2}</p>
         <h2>{languageToUse.childTitle}</h2>
         <p>{languageToUse.childText}</p>
+      </div>
+      <div className="center-button-container">
+        <Link to="/price-list" className="button">
+          Price List
+        </Link>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const PriceListPage = function (props) {
   return (
     <div>
       <Helmet>
-        <title>{languageToUse.massagesTitle}</title>
+        <title>{languageToUse.pricePageTitle}</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content={languageToUse.metaDescription} />
         <meta name="keywords" content={languageToUse.metaKeywords} />

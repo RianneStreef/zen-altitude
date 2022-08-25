@@ -31,14 +31,14 @@ const Products = (props) => {
         </div>
         <div className="product-description">
           <h2>{languageToUse.product2Title}</h2>
-          <p>
-            {languageToUse.product2Text1}
+          <div>
+            <p>{languageToUse.product2Text1} </p>
             <ul>
               <li>{languageToUse.product2Li1}</li>
               <li>{languageToUse.product2Li2}</li>
               <li>{languageToUse.product2Li3}</li>
             </ul>
-          </p>
+          </div>
 
           <p>{languageToUse.product2Text2}</p>
           <div className="center-button-container">
@@ -51,7 +51,7 @@ const Products = (props) => {
           <h2>{languageToUse.product3Title}</h2>
           <p>{languageToUse.product3Text}</p>
           <div className="center-button-container">
-            <Link to="/" className="button more-info-button">
+            <Link to="/soin-visage" className="button more-info-button">
               {languageToUse.moreInfo}
             </Link>
           </div>
