@@ -6,10 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 10px;
   transition: background-color 500ms ease;
   z-index: 999;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .header-contact {
@@ -20,7 +19,7 @@
   align-items: center;
   position: fixed;
   width: 100%;
-  padding: 0 200px;
+
   z-index: 999;
 }
 
@@ -38,7 +37,6 @@
   text-decoration: none;
   border-left: 1px solid #fff;
   color: #fff;
-  border-right: 1px solid #fff;
   padding: 10px 20px;
   font-size: 15px;
 }
@@ -98,11 +96,29 @@
   display: none;
 }
 
+.hidden-desktop {
+  display: flex;
+}
+
+.nav-bar {
+  height: 0;
+}
+
 @media only screen and (min-width: 768px) {
+  .header {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 35px;
+  }
   .hidden-mobile {
     display: flex;
   }
   .hidden-desktop {
     display: none;
+  }
+  .header-contact {
+    padding: 0 200px;
+  }
+  .header-contact a {
+    border-right: 1px solid #fff;
   }
 }

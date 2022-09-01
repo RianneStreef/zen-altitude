@@ -2,16 +2,28 @@
   overflow: hidden;
 }
 
+.soin-visage h1,
+.soin-visage h2 {
+  padding: 0 0 0 20px;
+}
+
 .soin-visage-card {
   border: 1px solid lightgray;
   width: fit-content;
   padding: 50px;
-  margin: 50px 0;
+  margin: 50px 10px;
   overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
   .soin-visage {
     padding: 100px 200px;
+  }
+  .soin-visage h1,
+  .soin-visage h2 {
+    padding: 0;
+  }
+  .soin-visage-card {
+    margin: 50px 0;
   }
 }

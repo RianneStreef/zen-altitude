@@ -48,14 +48,12 @@ const Header = (props) => {
 
   return (
     <>
-      <div className="header-contact hidden-mobile">
+      <div className="header-contact">
         <p>Zen Altitude</p>
         <a href="tel:+33 6 03 77 80 70">+33 6 03 77 80 70</a>
       </div>
       <div
-        className={`header hidden-mobile ${
-          headerBackground ? "header-background" : ""
-        }`}
+        className={`header ${headerBackground ? "header-background" : ""}`}
         id="navbar"
       >
         <div className="hidden-desktop">
@@ -65,7 +63,7 @@ const Header = (props) => {
             languageToUse={languageToUse}
           />
         </div>
-        <Link to="/" className="logo-link">
+        <Link to="/" className="logo-link hidden-mobile">
           <img src={logo} alt="Logo" className="header-logo" />
         </Link>
         <ul className="links hidden-mobile">

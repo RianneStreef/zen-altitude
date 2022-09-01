@@ -1,9 +1,13 @@
+.price-list h1 {
+  padding: 0 0 0 20px;
+}
+
 .price-list ul {
   width: fit-content;
   height: fit-content;
   padding: 50px;
   line-height: 50px;
-  margin: auto;
+  margin: 10px;
 }
 
 .price-list-part {
@@ -19,6 +23,13 @@
 @media only screen and (min-width: 768px) {
   .price-list {
     padding: 100px 200px;
+  }
+
+  .price-list h1 {
+    padding: 0;
+  }
+  .price-list ul {
+    margin: auto;
   }
 
   .price-list-container {

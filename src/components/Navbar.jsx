@@ -22,18 +22,18 @@ const Ul = styled.ul`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #000;
     padding-right: 25px;
     margin: 10px 0;
-    font-family: "Source Sans Pro Bold";
+   
     font-size: 20px;
     a {
-      color: #fff;
+      color: #000;
       transition: color 500ms ease-in;
       text-decoration: none;
     }
     a:visited {
-      color: #fff;
+      color: #000;
       text-decoration: none;
     }
     a:hover {
@@ -45,13 +45,15 @@ const Ul = styled.ul`
     }
   }
   flex-flow: column nowrap;
-  background-color: #000;
+  background-color: #fff;
+  color: #000
   position: fixed;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   top: 0;
   right: 0;
   height: 100vh;
   padding-top: 5rem;
+
   transition: transform 0.3s ease-in-out;
 `;
 
