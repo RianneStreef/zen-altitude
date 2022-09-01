@@ -14,20 +14,22 @@ const Intro = (props) => {
   return (
     <div className="intro" id="about">
       <div className="intro-text">
+        <h4 className="intro-title">{languageToUse.welcome}</h4>
         <p>{languageToUse.introText1}</p>
         <p>{languageToUse.introText2}</p>
         <p>{languageToUse.introText3}</p>
         <p>{languageToUse.introText4}</p>
-        <div className="center-button-container">
+        <div className="button-container">
           <Link to="/#contact" className="button">
             Contact
           </Link>
         </div>
       </div>
-      <img src={introImage} alt="" className="intro-image" />
+      <div className="intro-image-container">
+        <img src={introImage} alt="" className="intro-image" />
+      </div>
     </div>
   );
 };
 
 export default Intro;
-Intro;

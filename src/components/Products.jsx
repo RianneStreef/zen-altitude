@@ -16,7 +16,7 @@ const Products = (props) => {
         <div className="product-description">
           <h2>{languageToUse.product1Title}</h2>
           <p>{languageToUse.product1Text}</p>
-          <div className="center-button-container">
+          <div className="button-container">
             <Link to="/massages" className="button more-info-button">
               {languageToUse.moreInfo}
             </Link>
@@ -26,7 +26,7 @@ const Products = (props) => {
           <div className="product-image product-image-1" />
         </div>
 
-        <div className="product-description">
+        <div className="product-description" id="soin-jambes">
           <div className="product-image product-image-2" />
         </div>
         <div className="product-description">
@@ -41,7 +41,7 @@ const Products = (props) => {
           </div>
 
           <p>{languageToUse.product2Text2}</p>
-          <div className="center-button-container">
+          <div className="button-container">
             {/* <Link to="/" className="button more-info-button">
               {languageToUse.moreInfo}
             </Link> */}
@@ -50,7 +50,7 @@ const Products = (props) => {
         <div className="product-description">
           <h2>{languageToUse.product3Title}</h2>
           <p>{languageToUse.product3Text}</p>
-          <div className="center-button-container">
+          <div className="button-container">
             <Link to="/soin-visage" className="button more-info-button">
               {languageToUse.moreInfo}
             </Link>

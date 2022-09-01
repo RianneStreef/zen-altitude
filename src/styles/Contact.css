@@ -6,12 +6,12 @@ input,
 textarea {
   border: none;
   border-bottom: 1px solid black;
-  width: 100%;
+  width: 99%;
+  margin: auto;
 }
 
 .contact {
-  margin: 50px;
-  padding: 0 200px;
+  margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
@@ -19,6 +19,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .contact-card {
@@ -31,6 +32,7 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   .contact {
-    margin: 100px;
+    margin: 200px;
+    padding: 0 200px 100px 200px;
   }
 }

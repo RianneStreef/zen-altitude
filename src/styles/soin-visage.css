@@ -1,3 +1,17 @@
 .soin-visage {
-  padding: 50px 150px;
+  overflow: hidden;
+}
+
+.soin-visage-card {
+  border: 1px solid lightgray;
+  width: fit-content;
+  padding: 50px;
+  margin: 50px 0;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .soin-visage {
+    padding: 100px 200px;
+  }
 }

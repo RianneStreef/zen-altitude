@@ -27,13 +27,25 @@ const MassagesPage = function (props) {
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
       <div className="header-placeholder" />
+      <h1>{languageToUse.product1Title}</h1>
+
       <div className="massages-explanation">
-        <h1>{languageToUse.product1Title}</h1>
-        <h2>{languageToUse.pregnantTitle}</h2>
-        <p>{languageToUse.pregnantText1}</p>
-        <p>{languageToUse.pregnantText2}</p>
-        <h2>{languageToUse.childTitle}</h2>
-        <p>{languageToUse.childText}</p>
+        <div className="product-description">
+          <div className="product-image product-image-pregnant" />
+        </div>
+        <div className="product-description">
+          <h2>{languageToUse.pregnantTitle}</h2>
+          <p>{languageToUse.pregnantText1}</p>
+          <p>{languageToUse.pregnantText2}</p>
+        </div>
+
+        <div className="product-description">
+          <h2>{languageToUse.childTitle}</h2>
+          <p>{languageToUse.childText}</p>
+        </div>
+        <div className="product-description ">
+          <div className="product-image product-image-children" />
+        </div>
       </div>
       <div className="center-button-container">
         <Link to="/price-list" className="button">

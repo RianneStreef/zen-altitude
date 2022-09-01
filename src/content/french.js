@@ -1,16 +1,18 @@
 export const french = {
   language: "french",
 
-  indexTitle: "Zen Altidude || Les Bellville",
+  indexTitle: "Zen Altitude || Les Bellville",
   metaDescription: "French  description",
   metaKeywords: "French  keywords",
 
   soins: "Soins",
   prices: "Tarifs",
 
-  heroTitle: "Zen Altitude",
-  heroText: "Massages et soins à domicile",
+  heroTitle: "ZEN ALTITUDE - Massages et soins à domicile ",
+  heroText:
+    " Accordez vous un instant de sérénité et de pure détente. Prenez le temps de vous ressources!",
 
+  welcome: "Bienvenu chez Zen Altitude ",
   introText1:
     "Professionnelle du bien être depuis 13 ans, je vous propose mes services de massage à domicile (ou en cabine de soin à Val Thorens)  et soin du visage homme, femme, ados ( uniquement en cabine de soin à Val Thorens) dans toute la vallée des Belleville (Val Thorens, les Menuires et St martin de Belleville).",
   introText2:
@@ -35,7 +37,7 @@ export const french = {
 
   product3Title: "Soin de visage",
   product3Text:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at gravida arcu, eget mollis est. Integer et mauris id odio eleifend mattis id in erat. Donec scelerisque accumsan turpis non convallis. Praesent dignissim rhoncus magna, eu dignissim metus. Proin erat odio, accumsan vel arcu nec, scelerisque dignissim mauris. Fusce faucibus enim vel sollicitudin placerat. Proin lectus metus, faucibus ac purus et, hendrerit posuere mi. Duis a pharetra felis. Aliquam eu malesuada risus, ac dapibus tellus. Vestibulum quam nisi, aliquet in sodales non, dignissim id arcu. Morbi sed velit metus. Nulla scelerisque efficitur nisi, in vestibulum justo auctor vitae. Pellentesque suscipit vulputate tellus, id tincidunt nibh bibendum eu. ",
+    "Soin pour femmes et hommes qui est destiné à préserver la propreté du visage, à l'embellir, le raffermir, le tonifier ou le régénérer. ",
 
   product4Title: "Massage 4",
   product4Text:
@@ -123,4 +125,7 @@ export const french = {
   send: "Send",
 
   thanks: "Thank you for your message!",
+
+  rights: "Tous droits réservés.",
+  legal: "Mentions légales",
 };

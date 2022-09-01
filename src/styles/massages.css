@@ -1,3 +1,38 @@
 .massages {
-  padding: 50px 150px;
+  padding: 100px 200px;
+}
+
+.massages-explanation {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image-pregnant {
+  background-image: url("../images/pregnant.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.product-image-children {
+  background-image: url("../images/child-massage.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.massages-explanation > * {
+  width: 35vw;
+  height: 30vw;
+  margin: 80px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .massages-explanation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
