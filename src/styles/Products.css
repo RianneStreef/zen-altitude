@@ -55,23 +55,30 @@
 
 @media only screen and (min-width: 768px) {
   .products {
-    margin: 100px 200px;
+    margin: 50px;
   }
 
   .products-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
-  .products-container > * {
-    width: 35vw;
-    height: 30vw;
-    margin: 80px 0;
+  .product-description {
+    margin: 20px;
   }
+}
+
+@media only screen and (min-width: 1200px) {
   .product-description h2,
   .product-description p,
   .product-description ul {
-    padding: 20px 100px 10px 100px;
+    padding: 20px 50px 10px 50px;
+  }
+
+  .products-container > * {
+    width: 40vw;
+    height: 40vw;
+    margin: 20px;
   }
 }

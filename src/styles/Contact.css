@@ -32,6 +32,13 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   .contact {
+    margin: 50px;
+    padding: 0 50px 100px 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact {
     margin: 200px;
     padding: 0 200px 100px 200px;
   }

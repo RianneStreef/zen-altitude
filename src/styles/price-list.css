@@ -22,7 +22,7 @@
 
 @media only screen and (min-width: 768px) {
   .price-list {
-    padding: 100px 200px;
+    padding: 100px 50px;
   }
 
   .price-list h1 {
@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 100px;
   }
 
   .price-list-container-inverse {
@@ -49,5 +50,11 @@
     flex-wrap: wrap;
     justify-content: center;
     height: fit-content;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .price-list {
+    padding: 100px 200px;
   }
 }

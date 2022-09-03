@@ -17,7 +17,7 @@
 
 @media only screen and (min-width: 768px) {
   .soin-visage {
-    padding: 100px 200px;
+    padding: 100px 50px;
   }
   .soin-visage h1,
   .soin-visage h2 {
@@ -25,5 +25,11 @@
   }
   .soin-visage-card {
     margin: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .soin-visage {
+    padding: 100px 200px;
   }
 }

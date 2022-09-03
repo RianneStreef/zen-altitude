@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 import flagEn from "../images/icon-en.png";
 import flagFr from "../images/icon-fr.png";
-import flagNl from "../images/icon-nl.png";
 
 import { content } from "../content/languages";
 
@@ -15,7 +14,7 @@ const Ul = styled.ul`
   background-color: #fff;
   margin-top: 0;
   padding-left: 0;
-  width: 100%;
+  width: 100vw;
 
   li {
     display: flex;

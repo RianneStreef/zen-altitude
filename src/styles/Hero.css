@@ -46,18 +46,41 @@
 
 @media only screen and (min-width: 768px) {
   .hero-text {
-    padding: 0 350px;
+    padding: 0 50px;
   }
-
   .hero-text h1 {
-    font-size: 70px;
+    font-size: 40px;
     margin: 30px 0;
     padding: 0;
   }
 
   .hero-text p {
-    font-size: 40px;
+    font-size: 30px;
     margin: 30px 0;
     font-style: italic;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-text {
+    padding: 0 200px;
+  }
+  .hero-text h1 {
+    font-size: 70px;
+  }
+  .hero-text p {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .hero-text {
+    padding: 0 350px;
+  }
+  .hero-text h1 {
+    font-size: 70px;
+  }
+  .hero-text p {
+    font-size: 40px;
   }
 }
