@@ -21,7 +21,8 @@
     "rules": {
         "no-console": "off",
         "prettier/prettier": "error",
-        "quotes": [2, "single", {
+        "react/prop-types": "disabled",
+        "quotes": [2, "double", {
             "avoidEscape": true
         }]
     }

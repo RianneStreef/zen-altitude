@@ -13,7 +13,9 @@ import { content } from "../content/languages";
 import "../styles/Header.css";
 
 const Header = (props) => {
-  let { language, languageToUse, setLanguage, pathname, setPathname } = props;
+  let { language, languageToUse, setLanguage } = props;
+
+  const [pathname, setPathname] = useState(`/`);
 
   function handleSetLanguage(language) {
     setLanguage(language);
@@ -26,16 +28,23 @@ const Header = (props) => {
   let [headerBackground, setHeaderBackground] = useState(false);
 
   useEffect(() => {
+    setPathname(window.location.href);
+
     window.addEventListener("scroll", scrollnav);
+    navbar = document.getElementById("navbar");
 
     function scrollnav() {
+      let links = document.getElementById("links");
+
       let y = window.scrollY;
       let width = window.innerWidth;
 
       if (y > 0 && width > 768) {
         setHeaderBackground(true);
+        links.classList.add("background");
       } else {
         setHeaderBackground(false);
+        links.classList.remove("background");
       }
 
       // if (y === 0 && width > 768) {
@@ -66,7 +75,7 @@ const Header = (props) => {
         <Link to="/" className="logo-link hidden-mobile">
           <img src={logo} alt="Logo" className="header-logo" />
         </Link>
-        <ul className="links hidden-mobile">
+        <ul className="links hidden-mobile" id="links">
           <li>
             <Link
               to="/"

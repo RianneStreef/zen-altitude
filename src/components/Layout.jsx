@@ -7,8 +7,6 @@ const Layout = ({ children }) => {
   let [language, setLanguage] = useState("french");
   let languageToUse = "";
 
-  const [pathname, setPathname] = useState(`/`);
-
   //  let languageInStorage = "";
 
   // useEffect(() => {
@@ -27,8 +25,6 @@ const Layout = ({ children }) => {
       language,
       setLanguage,
       languageToUse,
-      pathname,
-      setPathname,
     })
   );
   return (
@@ -37,8 +33,6 @@ const Layout = ({ children }) => {
         language={language}
         setLanguage={setLanguage}
         languageToUse={languageToUse}
-        pathname={pathname}
-        setPathname={setPathname}
       />
       <section className="main">{childrenWithProps}</section>
 

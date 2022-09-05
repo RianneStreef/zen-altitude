@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 
 import "../styles/global.css";
 
@@ -11,6 +12,8 @@ import Hero from "../components/Hero";
 import Intro from "../components/Intro";
 import Products from "../components/Products";
 import Contact from "../components/Contact";
+
+import top from "../images/top.png";
 
 const IndexPage = function (props) {
   let { language, languageToUse } = props;
@@ -36,6 +39,9 @@ const IndexPage = function (props) {
       <Products language={language} languageToUse={languageToUse} />
       <div className="banner-2 hidden-mobile" />
       <Contact language={language} languageToUse={languageToUse} />
+      <Link to="/" className="top-link">
+        <img src={top} alt="Top link" className="top-link-image" />
+      </Link>
     </div>
   );
 };
