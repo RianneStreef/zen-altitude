@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 
 import "../styles/price-list.css";
 
@@ -19,8 +20,23 @@ const PriceListPage = function (props) {
     ? (languageToUse = content.english)
     : (languageToUse = content.french);
 
+  const [isHeaderSticky, setIsHeaderSticky] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener("scroll", function () {
+      const menuHeight = 413;
+      const yOffset = window.scrollY;
+      if (!isHeaderSticky && yOffset > menuHeight) {
+        setIsHeaderSticky(true);
+      }
+      if (isHeaderSticky && yOffset < menuHeight) {
+        setIsHeaderSticky(false);
+      }
+    });
+  });
+
   return (
-    <div>
+    <div className="price-list-page">
       <Helmet>
         <title>{languageToUse.pricePageTitle}</title>
         <meta name="robots" content="index, follow" />
@@ -28,9 +44,22 @@ const PriceListPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
-      <div className="header-placeholder" />
+      <div className="price-list-hero" />
+      <div
+        className={`price-list-menu ${
+          isHeaderSticky ? "fixed-price-list-menu" : ""
+        } 
+    }`}
+      >
+        <Link to="/price-list#massages">{languageToUse.product1Title}</Link>
+        <Link to="/price-list#soins-jambes">{languageToUse.product2Title}</Link>
+        <Link to="/price-list#soins-visage">{languageToUse.product3Title}</Link>
+      </div>
       <div className="price-list">
         <h1>{languageToUse.prices}</h1>
+        <div id="massages" />
+        <div className="header-placeholder" />
+
         <div className="price-list-container">
           <div className="price-list-images">
             <img src={massage1} alt="" className="price-list-image" />
@@ -46,6 +75,9 @@ const PriceListPage = function (props) {
             <li>120 minutes : 150€</li>
           </ul>
         </div>
+
+        <div id="soins-jambes" />
+        <div className="header-placeholder" />
         <div className="price-list-container price-list-container-inverse">
           <div className="price-list-images">
             <img src={massage1} alt="" className="price-list-image" />
@@ -58,6 +90,8 @@ const PriceListPage = function (props) {
             <li>60 minutes: 95€</li>
           </ul>
         </div>
+        <div id="soins-visage" />
+        <div className="header-placeholder" />
         <div className="price-list-container">
           <div className="price-list-images">
             <img src={massage1} alt="" className="price-list-image" />

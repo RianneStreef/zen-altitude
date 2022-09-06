@@ -92,6 +92,7 @@ p {
 .header-placeholder {
   height: 80px;
   overflow: hidden;
+  width: 100%;
 }
 
 .banner-1 {
