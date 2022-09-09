@@ -78,7 +78,7 @@
 
   .products-container > * {
     width: 40vw;
-    height: 40vw;
+    min-height: 40vw;
     margin: 20px;
   }
 }

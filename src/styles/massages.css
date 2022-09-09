@@ -1,3 +1,11 @@
+.massages-hero {
+  min-height: 60vh;
+  background-image: url("../images/massage.jpeg");
+  background-size: cover;
+  background-repeat: none;
+  width: 100vw;
+}
+
 .massages-explanation {
   display: flex;
   flex-direction: column;
@@ -37,8 +45,8 @@
     justify-content: space-between;
   }
   .massages-explanation > * {
-    width: 35vw;
-    height: 30vw;
+    width: 30vw;
+    min-height: 30vw;
     margin: 80px 0;
   }
 }

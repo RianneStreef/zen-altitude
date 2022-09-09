@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Burger from "../components/Burger";
 
-import logo from "../images/icon.png";
+import logo from "../images/logo-rose.svg";
 
 import flagEn from "../images/icon-en.png";
 import flagFr from "../images/icon-fr.png";
@@ -13,9 +13,7 @@ import { content } from "../content/languages";
 import "../styles/Header.css";
 
 const Header = (props) => {
-  let { language, languageToUse, setLanguage } = props;
-
-  const [pathname, setPathname] = useState(`/`);
+  let { language, languageToUse, setLanguage, pathname } = props;
 
   function handleSetLanguage(language) {
     setLanguage(language);
@@ -28,8 +26,6 @@ const Header = (props) => {
   let [headerBackground, setHeaderBackground] = useState(false);
 
   useEffect(() => {
-    setPathname(window.location.href);
-
     window.addEventListener("scroll", scrollnav);
     navbar = document.getElementById("navbar");
 
@@ -80,7 +76,6 @@ const Header = (props) => {
             <Link
               to="/"
               className={`nav-link ${pathname === "/" ? "active" : ""}`}
-              onClick={() => setPathname("/")}
             >
               Zen Altitude
             </Link>
@@ -89,7 +84,6 @@ const Header = (props) => {
             <Link
               to="/#soins"
               className={`nav-link ${pathname === "/#soins" ? "active" : ""}`}
-              onClick={() => setPathname("/#soins")}
             >
               {languageToUse.soins}
             </Link>
@@ -98,7 +92,6 @@ const Header = (props) => {
             <Link
               to="/#contact"
               className={`nav-link ${pathname === "/#contact" ? "active" : ""}`}
-              onClick={() => setPathname("/#contact")}
             >
               Contact
             </Link>
@@ -107,9 +100,10 @@ const Header = (props) => {
             <Link
               to="/price-list"
               className={`nav-link ${
-                pathname === "/price-list" ? "active" : ""
+                pathname === "https://zen-altitude.netlify.app/price-list"
+                  ? "active"
+                  : ""
               }`}
-              onClick={() => setPathname("/price-list")}
             >
               {languageToUse.prices}
             </Link>

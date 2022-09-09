@@ -18,7 +18,7 @@ const MassagesPage = function (props) {
     : (languageToUse = content.french);
 
   return (
-    <div className="massages">
+    <div>
       <Helmet>
         <title>{languageToUse.massagesTitle}</title>
         <meta name="robots" content="index, follow" />
@@ -26,31 +26,35 @@ const MassagesPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
+      <div className="massages-hero" />
+
       <div className="header-placeholder" />
-      <h1>{languageToUse.product1Title}</h1>
+      <div className="massages">
+        <h1>{languageToUse.product1Title}</h1>
 
-      <div className="massages-explanation">
-        <div className="product-description">
-          <div className="product-image product-image-pregnant" />
-        </div>
-        <div className="product-description">
-          <h2>{languageToUse.pregnantTitle}</h2>
-          <p>{languageToUse.pregnantText1}</p>
-          <p>{languageToUse.pregnantText2}</p>
-        </div>
+        <div className="massages-explanation">
+          <div className="product-description">
+            <div className="product-image product-image-pregnant" />
+          </div>
+          <div className="product-description">
+            <h2>{languageToUse.pregnantTitle}</h2>
+            <p>{languageToUse.pregnantText1}</p>
+            <p>{languageToUse.pregnantText2}</p>
+          </div>
 
-        <div className="product-description">
-          <h2>{languageToUse.childTitle}</h2>
-          <p>{languageToUse.childText}</p>
+          <div className="product-description">
+            <h2>{languageToUse.childTitle}</h2>
+            <p>{languageToUse.childText}</p>
+          </div>
+          <div className="product-description ">
+            <div className="product-image product-image-children" />
+          </div>
         </div>
-        <div className="product-description ">
-          <div className="product-image product-image-children" />
+        <div className="center-button-container">
+          <Link to="/price-list" className="button">
+            Price List
+          </Link>
         </div>
-      </div>
-      <div className="center-button-container">
-        <Link to="/price-list" className="button">
-          Price List
-        </Link>
       </div>
     </div>
   );

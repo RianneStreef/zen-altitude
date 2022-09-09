@@ -52,6 +52,7 @@
 
 .header-logo {
   width: 80px;
+  height: 80px;
   margin: 10px 0;
   padding: 10px 10px 10px 50px;
 }
@@ -80,7 +81,7 @@
 
 .logo-link {
   text-align: right;
-  width: 100px;
+  width: 150px;
 }
 
 .nav-link:hover {

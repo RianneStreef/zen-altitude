@@ -51,8 +51,12 @@ const PriceListPage = function (props) {
         } 
     }`}
       >
-        <Link to="/price-list#massages">{languageToUse.product1Title}</Link>
-        <Link to="/price-list#soins-jambes">{languageToUse.product2Title}</Link>
+        <Link to="/price-list#massages">{languageToUse.product1Title}</Link>{" "}
+        <span>-</span>
+        <Link to="/price-list#soins-jambes">
+          {languageToUse.product2Title}
+        </Link>{" "}
+        <span>-</span>
         <Link to="/price-list#soins-visage">{languageToUse.product3Title}</Link>
       </div>
       <div className="price-list">

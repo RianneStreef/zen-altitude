@@ -7,6 +7,11 @@ const Layout = ({ children }) => {
   let [language, setLanguage] = useState("french");
   let languageToUse = "";
 
+  const [pathname, setPathname] = useState(`/`);
+
+  useEffect(() => {
+    setPathname(window.location.href);
+  });
   //  let languageInStorage = "";
 
   // useEffect(() => {
@@ -17,14 +22,12 @@ const Layout = ({ children }) => {
   //   }
   // }, []);
 
-  console.log("language in layout");
-  console.log(language);
-
   const childrenWithProps = React.Children.map(children, (child) =>
     React.cloneElement(child, {
       language,
       setLanguage,
       languageToUse,
+      pathname,
     })
   );
   return (
@@ -33,6 +36,7 @@ const Layout = ({ children }) => {
         language={language}
         setLanguage={setLanguage}
         languageToUse={languageToUse}
+        pathname={pathname}
       />
       <section className="main">{childrenWithProps}</section>
 

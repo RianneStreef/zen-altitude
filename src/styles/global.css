@@ -1,17 +1,17 @@
 :root {
-  --color-highlight: #dc3a6f;
-  --color-highlight-2: #a9c054;
+  --color-highlight: #dc396e;
+  --color-highlight-2: #5b8c3d;
   --color-shadow: #eaeaea;
   --color-text: #fff;
   --color-background: #000;
   --mobile-text: 15px;
-  --desktop-text: 15px;
+  --desktop-text: 22px;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
+  font-family: "Quicksand";
+  src: local("Quicksand"),
+    url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf) format("truetype");
 }
 
 html {
@@ -27,7 +27,7 @@ main {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: "Quicksand";
 }
 
 h1 {
@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 25px;
   color: var(--color-highlight-2);
 }
 
@@ -44,7 +44,7 @@ h3 {
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 30px;
   color: var(--color-highlight-2);
 }
 
@@ -186,7 +186,8 @@ p {
     display: none;
   }
 
-  .banner-1 {
+  .banner-1,
+  .banner-2 {
     height: 400px;
   }
 }

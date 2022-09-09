@@ -12,7 +12,7 @@ import clock from "../images/clock-white.png";
 import fb from "../images/fb-white.png";
 import insta from "../images/insta-white.png";
 
-import logo from "../images/icon.png";
+import logo from "../images/logo-black.svg";
 
 const Footer = (props) => {
   let { language, languageToUse } = props;
