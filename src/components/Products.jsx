@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "gatsby";
 
 import { content } from "../content/languages";
@@ -10,73 +10,115 @@ const Products = (props) => {
 
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollImages);
+
+    let productImage1 = document.getElementById("product-image-1");
+    let productImage2 = document.getElementById("product-image-2");
+    let productImage3 = document.getElementById("product-image-3");
+
+    let productText1 = document.getElementById("massage-intro");
+    let productText2 = document.getElementById("soin-jambes");
+    let productText3 = document.getElementById("soins-visage-intro");
+
+    function scrollImages() {
+      let scrollY = window.innerHeight;
+
+      let positionImage1 = productImage1.getBoundingClientRect();
+      let positionImage2 = productImage2.getBoundingClientRect();
+      let positionImage3 = productImage3.getBoundingClientRect();
+
+      if (positionImage1.y < scrollY) {
+        productImage1.classList.add("slide-from-left");
+        productText1.classList.add("remove-margin-left");
+      }
+      if (positionImage2.y < scrollY) {
+        productImage2.classList.add("slide-from-right");
+        productText2.classList.add("remove-margin-right");
+      }
+      if (positionImage3.y < scrollY) {
+        productImage3.classList.add("slide-from-left");
+        productText3.classList.add("remove-margin-left");
+      }
+    }
+  });
+
   return (
     <div className="products" id="soins">
+      <div className="header-placeholder" />
       <div className="products-container">
-        <div className="product-description">
-          <h2>{languageToUse.product1Title}</h2>
-          <p>{languageToUse.product1Text}</p>
-          <div className="button-container">
-            <Link to="/massages" className="button more-info-button">
-              {languageToUse.moreInfo}
-            </Link>
+        <div className="product">
+          <div
+            className="product-description product-description-text-left"
+            id="massage-intro"
+          >
+            <h2>{languageToUse.product1Title}</h2>
+            <p>{languageToUse.product1Text}</p>
+            <div className="button-container">
+              <Link to="/massages" className="button more-info-button">
+                {languageToUse.moreInfo}
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="product-description">
-          <div className="product-image product-image-1" />
+          <div
+            className="product-description slide-image-right"
+            id="product-image-1"
+          >
+            <div className="product-image product-image-1" />
+          </div>
         </div>
 
-        <div className="product-description" id="soin-jambes">
-          <div className="product-image product-image-2" />
-        </div>
-        <div className="product-description">
-          <h2>{languageToUse.product2Title}</h2>
-          <div>
-            <p>{languageToUse.product2Text1} </p>
-            <ul>
-              <li>{languageToUse.product2Li1}</li>
-              <li>{languageToUse.product2Li2}</li>
-              <li>{languageToUse.product2Li3}</li>
-            </ul>
+        <div className="product">
+          <div
+            className="product-description slide-image-left"
+            id="product-image-2"
+          >
+            <div className="product-image product-image-2" />
           </div>
+          <div
+            className="product-description product-description-text-right"
+            id="soin-jambes"
+          >
+            <h2>{languageToUse.product2Title}</h2>
+            <div>
+              <p>{languageToUse.product2Text1} </p>
+              <ul>
+                <li>{languageToUse.product2Li1}</li>
+                <li>{languageToUse.product2Li2}</li>
+                <li>{languageToUse.product2Li3}</li>
+              </ul>
+            </div>
 
-          <p>{languageToUse.product2Text2}</p>
-          <div className="button-container">
-            {/* <Link to="/" className="button more-info-button">
-              {languageToUse.moreInfo}
-            </Link> */}
+            <p>{languageToUse.product2Text2}</p>
           </div>
-        </div>
-        <div className="product-description">
-          <h2>{languageToUse.product3Title}</h2>
-          <p>{languageToUse.product3Text}</p>
-          <div className="button-container">
-            <Link to="/soin-visage" className="button more-info-button">
-              {languageToUse.moreInfo}
-            </Link>
-          </div>
-        </div>
-        <div className="product-description">
-          <div className="product-image product-image-3" />
-        </div>
-        {/* <div className="product-description">
-          <div className="product-image product-image-4" />
         </div>
 
-        <div className="product-description">
-          <h2>{languageToUse.product4Title}</h2>
-          <p>{languageToUse.product4Text}</p>
-          <div className="center-button-container">
-            <Link to="/" className="button more-info-button">
-              {languageToUse.moreInfo}
-            </Link>
+        <div className="product">
+          <div
+            className="product-description product-description-text-left"
+            id="soins-visage-intro"
+          >
+            <h2>{languageToUse.product3Title}</h2>
+            <p>{languageToUse.product3Text}</p>
+            <div className="button-container">
+              <Link to="/soin-visage" className="button more-info-button">
+                {languageToUse.moreInfo}
+              </Link>
+            </div>
           </div>
-        </div> */}
-      </div>
-      <div className="center-button-container">
-        <Link to="/price-list" className="button">
-          Price List
-        </Link>
+          <div
+            className="product-description slide-image-right"
+            id="product-image-3"
+          >
+            <div className="product-image product-image-3 " />
+          </div>
+        </div>
+        <div className="center-button-container">
+          <Link to="/price-list" className="button">
+            Price List
+          </Link>
+        </div>
       </div>
     </div>
   );

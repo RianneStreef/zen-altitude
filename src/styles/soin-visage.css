@@ -2,17 +2,39 @@
   overflow: hidden;
 }
 
+.soin-visage-hero {
+  min-height: 60vh;
+  background-image: url("../images/spa-deco.jpeg");
+  background-size: cover;
+  background-repeat: none;
+  width: 100vw;
+}
+
+#femme,
+#homme {
+  position: relative;
+  top: -200px;
+}
+
 .soin-visage h1,
 .soin-visage h2 {
   padding: 0 0 0 20px;
 }
 
 .soin-visage-card {
-  border: 1px solid lightgray;
   width: fit-content;
   padding: 50px;
   margin: 50px 10px;
   overflow: hidden;
+
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
 }
 
 @media only screen and (min-width: 768px) {

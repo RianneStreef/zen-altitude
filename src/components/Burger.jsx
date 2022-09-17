@@ -39,7 +39,7 @@ const Burger = (props) => {
   let { language, setLanguage, languageToUse } = props;
 
   return (
-    <div>
+    <div id="nav">
       <Navbar
         open={open}
         setOpen={setOpen}

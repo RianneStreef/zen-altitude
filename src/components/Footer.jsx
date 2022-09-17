@@ -97,7 +97,7 @@ const Footer = (props) => {
       <div className="footer-bottom">
         {" "}
         <span>
-          © Zen Altitude. {languageToUse.rights}{" "}
+          © Zen Altitude - 2022. {languageToUse.rights}{" "}
           <Link to="/legal">{languageToUse.legal}</Link> -{" "}
           <a href="https://vts-webdesign.com" target="_blank">
             VTS Webdesign

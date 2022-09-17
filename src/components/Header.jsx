@@ -13,7 +13,15 @@ import { content } from "../content/languages";
 import "../styles/Header.css";
 
 const Header = (props) => {
-  let { language, languageToUse, setLanguage, pathname } = props;
+  let {
+    language,
+    languageToUse,
+    setLanguage,
+    pathname,
+    isHeaderSticky,
+    setIsHeaderSticky,
+    screenWidth,
+  } = props;
 
   function handleSetLanguage(language) {
     setLanguage(language);
@@ -58,7 +66,9 @@ const Header = (props) => {
         <a href="tel:+33 6 03 77 80 70">+33 6 03 77 80 70</a>
       </div>
       <div
-        className={`header ${headerBackground ? "header-background" : ""}`}
+        className={`header ${headerBackground ? "header-background" : ""} ${
+          screenWidth ? "" : ""
+        } }`}
         id="navbar"
       >
         <div className="hidden-desktop">
@@ -75,7 +85,11 @@ const Header = (props) => {
           <li>
             <Link
               to="/"
-              className={`nav-link ${pathname === "/" ? "active" : ""}`}
+              className={`nav-link ${
+                pathname === "/" || pathname === "http://localhost:8000/"
+                  ? "active"
+                  : ""
+              }`}
             >
               Zen Altitude
             </Link>
@@ -83,7 +97,12 @@ const Header = (props) => {
           <li>
             <Link
               to="/#soins"
-              className={`nav-link ${pathname === "/#soins" ? "active" : ""}`}
+              className={`nav-link ${
+                pathname === "/#soins" ||
+                pathname === "http://localhost:8000/#soins"
+                  ? "active"
+                  : ""
+              }`}
             >
               {languageToUse.soins}
             </Link>
@@ -91,7 +110,12 @@ const Header = (props) => {
           <li>
             <Link
               to="/#contact"
-              className={`nav-link ${pathname === "/#contact" ? "active" : ""}`}
+              className={`nav-link ${
+                pathname === "/#contact" ||
+                pathname === "http://localhost:8000/#contact"
+                  ? "active"
+                  : ""
+              }`}
             >
               Contact
             </Link>
@@ -100,7 +124,8 @@ const Header = (props) => {
             <Link
               to="/price-list"
               className={`nav-link ${
-                pathname === "https://zen-altitude.netlify.app/price-list"
+                pathname === "https://zen-altitude.netlify.app/price-list" ||
+                pathname === "http://localhost:8000/price-list"
                   ? "active"
                   : ""
               }`}

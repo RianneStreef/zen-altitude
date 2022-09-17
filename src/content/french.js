@@ -54,6 +54,9 @@ export const french = {
   childText:
     "Manœuvres douces et légères. Permet à l’enfant d’être plus calme et concentré, sécurise et favorise le sommeil, valorise l’estime de soi, améliore la gestion des émotions.",
 
+  women: "Femme",
+  men: "Homme",
+
   soinVisageTitle: "Soin visage",
   soinVisageFemmeTitle: "SOIN VISAGE FEMME",
   soinVisageFemme1: "SOIN BELLE NIGELLE",
@@ -116,6 +119,10 @@ export const french = {
     "Soin pour tous types de peaux, nettoyant et hydratant",
   soinVisageHomme3Description:
     "Soin pour les peaux sensibles et réactives, Apaisant et hydratant ",
+
+  massage: "Massage",
+  legs: "Jambes",
+  face: "Visage",
 
   contact: "Contact",
   contactIntro: "Contact intro",

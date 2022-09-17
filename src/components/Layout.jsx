@@ -7,9 +7,17 @@ const Layout = ({ children }) => {
   let [language, setLanguage] = useState("french");
   let languageToUse = "";
 
-  const [pathname, setPathname] = useState(`/`);
+  const [pathname, setPathname] = useState("/");
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
   useEffect(() => {
+    function handleResize() {
+      setScreenWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+
     setPathname(window.location.href);
   });
   //  let languageInStorage = "";
@@ -28,6 +36,10 @@ const Layout = ({ children }) => {
       setLanguage,
       languageToUse,
       pathname,
+      screenWidth,
+      setScreenWidth,
+      isHeaderSticky,
+      setIsHeaderSticky,
     })
   );
   return (
@@ -37,6 +49,8 @@ const Layout = ({ children }) => {
         setLanguage={setLanguage}
         languageToUse={languageToUse}
         pathname={pathname}
+        isHeaderSticky={isHeaderSticky}
+        setIsHeaderSticky={setIsHeaderSticky}
       />
       <section className="main">{childrenWithProps}</section>
 

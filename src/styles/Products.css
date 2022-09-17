@@ -1,5 +1,19 @@
 .products-container > * {
   margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product > * {
+  width: 80vw;
+  min-height: 80vw;
 }
 
 .products-container {
@@ -15,7 +29,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 10px;
 }
 
 .product-description h2,
@@ -45,27 +58,20 @@
   height: 100%;
   width: 100%;
 }
-.product-image-4 {
-  background-image: url("../images/pregnant.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
 
 @media only screen and (min-width: 768px) {
   .products {
     margin: 50px;
   }
 
+  .product {
+    flex-direction: row;
+  }
+
   .products-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .product-description {
-    margin: 20px;
   }
 }
 
@@ -76,9 +82,8 @@
     padding: 20px 50px 10px 50px;
   }
 
-  .products-container > * {
+  .product > * {
     width: 40vw;
     min-height: 40vw;
-    margin: 20px;
   }
 }

@@ -10,7 +10,17 @@ textarea {
   margin: auto;
 }
 
-.contact {
+.form-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.contact-form {
+  width: 90%;
+  padding: 20px;
+}
+
+.contact-card {
   margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
@@ -19,15 +29,8 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-}
-
-.contact-card {
+  /* padding: 20px; */
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -39,7 +42,6 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
   .contact {
-    margin: 200px;
     padding: 0 200px 100px 200px;
   }
 }
