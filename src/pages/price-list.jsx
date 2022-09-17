@@ -27,8 +27,10 @@ const PriceListPage = function (props) {
     ? (languageToUse = content.english)
     : (languageToUse = content.french);
 
-  const pathnameIncludes = pathname.includes("price-list");
-  console.log(pathnameIncludes);
+  if (pathname) {
+    const pathnameIncludes = pathname.includes("price-list");
+    console.log(pathnameIncludes);
+  }
 
   useEffect(() => {
     function handleHeader() {
