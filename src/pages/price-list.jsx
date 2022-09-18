@@ -19,6 +19,7 @@ const PriceListPage = function (props) {
     languageToUse,
     screenWidth,
     pathname,
+    pathnameIncludes,
     isHeaderSticky,
     setIsHeaderSticky,
   } = props;
@@ -27,16 +28,15 @@ const PriceListPage = function (props) {
     ? (languageToUse = content.english)
     : (languageToUse = content.french);
 
+  console.log("pathname");
+  console.log(pathname);
+
   if (pathname) {
-    const pathnameIncludes = pathname.includes("price-list");
-    console.log(pathnameIncludes);
+    pathnameIncludes = pathname.includes("price-list");
   }
 
   useEffect(() => {
     function handleHeader() {
-      console.log("screenWidth");
-      console.log(screenWidth);
-
       const heroHeight = window.innerHeight * 0.6;
       const yOffset = window.scrollY;
       const menuHeight = 413;
@@ -47,13 +47,13 @@ const PriceListPage = function (props) {
         if (!isHeaderSticky && yOffset > heroHeight) {
           setIsHeaderSticky(true);
 
-          if (pathnameIncludes) {
+          if (pathnameIncludes === true) {
             nav.classList.add("lower-nav-fixed-mobile");
           }
         }
         if (isHeaderSticky && yOffset < heroHeight) {
           setIsHeaderSticky(false);
-          if (pathnameIncludes) {
+          if (pathnameIncludes === true) {
             nav.classList.remove("lower-nav-fixed-mobile");
           }
         }
@@ -70,6 +70,12 @@ const PriceListPage = function (props) {
     }
 
     window.addEventListener("scroll", handleHeader);
+
+    console.log("screenWidth");
+    console.log(screenWidth);
+
+    console.log("pathnameIncludes");
+    console.log(pathnameIncludes);
   });
 
   return (

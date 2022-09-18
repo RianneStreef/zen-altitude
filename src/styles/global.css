@@ -166,11 +166,11 @@ p {
 }
 
 .slide-image-left {
-  margin: 0 0 0 -500px;
+  margin: 0 0 0 500px;
 }
 
 .slide-image-right {
-  margin: 0 -500px 0 0;
+  margin: 0 500px 0 0;
 }
 
 .slide-from-left {
@@ -184,13 +184,13 @@ p {
 }
 
 .product-description-text-left {
-  padding: 20px 0;
-  margin-left: 500px;
+  padding: 0;
+  margin-right: 500px;
 }
 
 .product-description-text-right {
-  padding: 20px 0;
-  margin-right: 500px;
+  padding: 0;
+  margin-left: 500px;
 }
 
 .remove-margin-left {
@@ -235,10 +235,10 @@ p {
     height: 400px;
   }
   .slide-from-left {
-    margin: 0 0 0 40px;
+    margin: 0 50px 0 0;
   }
 
   .slide-from-right {
-    margin: 0 40px 0 0;
+    margin: 0 0 0 50px;
   }
 }

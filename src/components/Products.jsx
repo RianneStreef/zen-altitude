@@ -30,16 +30,16 @@ const Products = (props) => {
       let positionImage3 = productImage3.getBoundingClientRect();
 
       if (positionImage1.y < scrollY) {
-        productImage1.classList.add("slide-from-left");
-        productText1.classList.add("remove-margin-left");
+        productText1.classList.add("remove-margin-right");
+        productImage1.classList.add("slide-from-right");
       }
       if (positionImage2.y < scrollY) {
-        productImage2.classList.add("slide-from-right");
-        productText2.classList.add("remove-margin-right");
+        productImage2.classList.add("slide-from-left");
+        productText2.classList.add("remove-margin-left");
       }
       if (positionImage3.y < scrollY) {
-        productImage3.classList.add("slide-from-left");
-        productText3.classList.add("remove-margin-left");
+        productText3.classList.add("remove-margin-right");
+        productImage3.classList.add("slide-from-right");
       }
     }
   });

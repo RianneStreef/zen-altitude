@@ -9,6 +9,8 @@ const Layout = ({ children }) => {
 
   const [pathname, setPathname] = useState("/");
 
+  let pathnameIncludes;
+
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
@@ -36,6 +38,7 @@ const Layout = ({ children }) => {
       setLanguage,
       languageToUse,
       pathname,
+      pathnameIncludes,
       screenWidth,
       setScreenWidth,
       isHeaderSticky,
