@@ -35,7 +35,6 @@ const Header = (props) => {
 
   useEffect(() => {
     window.addEventListener("scroll", scrollnav);
-    navbar = document.getElementById("navbar");
 
     function scrollnav() {
       let links = document.getElementById("links");
