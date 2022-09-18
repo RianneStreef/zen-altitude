@@ -5,6 +5,16 @@ export const french = {
   metaDescription: "French  description",
   metaKeywords: "French  keywords",
 
+  soinVisagePageTitle: "Soin Visage || Zen Altitude",
+  massagePageTitle: "Massages || Zen Altitude",
+  pricePageTitle: "Liste de prix || Zen Altitude",
+
+  metaDescriptionSoinVisage:
+    "Soin pour femmes et hommes qui est destiné à préserver la propreté du visage, à l'embellir, le raffermir, le tonifier ou le régénérer.",
+  metaDescriptionPrice: "Liste de prix de Zen Altitude",
+  metaDescriptionMassage:
+    "Intégralement adapté à votre besoin et état du moment le massage sur mesure permet de délier les tensions physiques tout en libérant votre psychique, l’objectif étant de vous recentrer au sein de votre corps. Composez votre massage comme vous le souhaitez. Nous conviendrons ensemble du massage qui vous sera le plus approprié.",
+
   soins: "Soins",
   prices: "Tarifs",
 

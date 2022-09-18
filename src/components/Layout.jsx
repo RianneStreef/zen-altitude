@@ -11,17 +11,19 @@ const Layout = ({ children }) => {
 
   let pathnameIncludes;
 
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(0);
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
   useEffect(() => {
+    setScreenWidth(window.innerWidth);
     function handleResize() {
-      setScreenWidth(window.innerWidth);
+      const newSize = window.innerWidth;
+      setScreenWidth(newSize);
     }
     window.addEventListener("resize", handleResize);
-
     setPathname(window.location.href);
-  });
+  }, [screenWidth, pathname]);
+
   //  let languageInStorage = "";
 
   // useEffect(() => {

@@ -41,31 +41,29 @@ const PriceListPage = function (props) {
       const yOffset = window.scrollY;
       const menuHeight = 413;
 
-      if (screenWidth < 769) {
-        const nav = document.getElementById("navbar");
-
-        if (!isHeaderSticky && yOffset > heroHeight) {
-          setIsHeaderSticky(true);
-
-          if (pathnameIncludes === true) {
-            nav.classList.add("lower-nav-fixed-mobile");
-          }
-        }
-        if (isHeaderSticky && yOffset < heroHeight) {
-          setIsHeaderSticky(false);
-          if (pathnameIncludes === true) {
-            nav.classList.remove("lower-nav-fixed-mobile");
-          }
-        }
-      }
-
-      if (screenWidth >= 769) {
-        if (!isHeaderSticky && yOffset > menuHeight) {
-          setIsHeaderSticky(true);
-        }
-        if (isHeaderSticky && yOffset < menuHeight) {
-          setIsHeaderSticky(false);
-        }
+      if (screenWidth <= 768) {
+        console.log("mobile size");
+        // const nav = document.getElementById("navbar");
+        // if (!isHeaderSticky && yOffset > heroHeight) {
+        //   setIsHeaderSticky(true);
+        //   if (pathnameIncludes === true) {
+        //     nav.classList.add("lower-nav-fixed-mobile");
+        //   }
+        // }
+        // if (isHeaderSticky && yOffset < heroHeight) {
+        //   setIsHeaderSticky(false);
+        //   if (pathnameIncludes === true) {
+        //     nav.classList.remove("lower-nav-fixed-mobile");
+        //   }
+        // }
+      } else {
+        console.log("desktop size");
+        // if (!isHeaderSticky && yOffset > menuHeight) {
+        //   setIsHeaderSticky(true);
+        // }
+        // if (isHeaderSticky && yOffset < menuHeight) {
+        //   setIsHeaderSticky(false);
+        // }
       }
     }
 
@@ -76,14 +74,14 @@ const PriceListPage = function (props) {
 
     console.log("pathnameIncludes");
     console.log(pathnameIncludes);
-  });
+  }, [screenWidth]);
 
   return (
     <div className="price-list-page">
       <Helmet>
         <title>{languageToUse.pricePageTitle}</title>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content={languageToUse.metaDescription} />
+        <meta name="description" content={languageToUse.metaDescriptionPrice} />
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>

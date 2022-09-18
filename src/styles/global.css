@@ -166,7 +166,7 @@ p {
 }
 
 .slide-image-left {
-  margin: 0 0 0 500px;
+  margin: 0 0 0 -500px;
 }
 
 .slide-image-right {

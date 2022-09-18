@@ -37,7 +37,10 @@ const SoinVisagePage = function (props) {
       <Helmet>
         <title>{languageToUse.soinVisagePageTitle}</title>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content={languageToUse.metaDescription} />
+        <meta
+          name="description"
+          content={languageToUse.metaDescriptionSoinVisage}
+        />
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>

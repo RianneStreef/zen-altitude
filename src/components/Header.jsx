@@ -65,9 +65,7 @@ const Header = (props) => {
         <a href="tel:+33 6 03 77 80 70">+33 6 03 77 80 70</a>
       </div>
       <div
-        className={`header ${headerBackground ? "header-background" : ""} ${
-          screenWidth ? "" : ""
-        } }`}
+        className={`header ${headerBackground ? "header-background" : ""}`}
         id="navbar"
       >
         <div className="hidden-desktop">

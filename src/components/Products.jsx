@@ -24,11 +24,9 @@ const Products = (props) => {
 
     function scrollImages() {
       let scrollY = window.innerHeight;
-
       let positionImage1 = productImage1.getBoundingClientRect();
       let positionImage2 = productImage2.getBoundingClientRect();
       let positionImage3 = productImage3.getBoundingClientRect();
-
       if (positionImage1.y < scrollY) {
         productText1.classList.add("remove-margin-right");
         productImage1.classList.add("slide-from-right");
