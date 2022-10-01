@@ -150,7 +150,7 @@ p {
   font-size: var(--mobile-text);
 }
 
-.hidden-desktop {
+.hidden-mobile {
   display: none;
 }
 
@@ -223,11 +223,11 @@ p {
   }
 
   .hidden-desktop {
-    display: flex;
+    display: none;
   }
 
   .hidden-mobile {
-    display: none;
+    display: flex;
   }
 
   .banner-1,

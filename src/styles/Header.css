@@ -107,14 +107,6 @@
   padding-right: 50px;
 }
 
-.hidden-mobile {
-  display: none;
-}
-
-.hidden-desktop {
-  display: flex;
-}
-
 .nav-bar {
   height: 0;
 }
@@ -125,12 +117,6 @@
     margin-top: 35px;
   }
 
-  .hidden-mobile {
-    display: flex;
-  }
-  .hidden-desktop {
-    display: none;
-  }
   .header-contact {
     padding: 0 50px;
   }

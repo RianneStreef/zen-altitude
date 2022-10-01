@@ -49,14 +49,6 @@ const Layout = ({ children }) => {
   );
   return (
     <div className="layout">
-      <Header
-        language={language}
-        setLanguage={setLanguage}
-        languageToUse={languageToUse}
-        pathname={pathname}
-        isHeaderSticky={isHeaderSticky}
-        setIsHeaderSticky={setIsHeaderSticky}
-      />
       <section className="main">{childrenWithProps}</section>
 
       <Footer

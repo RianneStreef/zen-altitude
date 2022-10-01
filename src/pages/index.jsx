@@ -6,7 +6,7 @@ import "../styles/global.css";
 
 import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
-
+import Header from "../components/Header";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Intro from "../components/Intro";
@@ -16,7 +16,14 @@ import Contact from "../components/Contact";
 import top from "../images/top.png";
 
 const IndexPage = function (props) {
-  let { language, languageToUse } = props;
+  let {
+    language,
+    languageToUse,
+    setLanguage,
+    pathname,
+    isHeaderSticky,
+    setIsHeaderSticky,
+  } = props;
 
   language === "english"
     ? (languageToUse = content.english)
@@ -31,6 +38,14 @@ const IndexPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
+      <Header
+        language={language}
+        setLanguage={setLanguage}
+        languageToUse={languageToUse}
+        pathname={pathname}
+        isHeaderSticky={isHeaderSticky}
+        setIsHeaderSticky={setIsHeaderSticky}
+      />
       <Hero language={language} languageToUse={languageToUse} />
       <Intro language={language} languageToUse={languageToUse} />
       <div className="banner-1 hidden-mobile">

@@ -6,6 +6,8 @@ import "../styles/price-list.css";
 
 import Layout from "../components/Layout";
 
+import HeaderPrice from "../components/HeaderPrice";
+
 import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
 
@@ -17,9 +19,9 @@ const PriceListPage = function (props) {
   let {
     language,
     languageToUse,
+    setLanguage,
     screenWidth,
     pathname,
-    pathnameIncludes,
     isHeaderSticky,
     setIsHeaderSticky,
   } = props;
@@ -31,50 +33,8 @@ const PriceListPage = function (props) {
   console.log("pathname");
   console.log(pathname);
 
-  if (pathname) {
-    pathnameIncludes = pathname.includes("price-list");
-  }
-
-  useEffect(() => {
-    function handleHeader() {
-      const heroHeight = window.innerHeight * 0.6;
-      const yOffset = window.scrollY;
-      const menuHeight = 413;
-
-      if (screenWidth <= 768) {
-        console.log("mobile size");
-        // const nav = document.getElementById("navbar");
-        // if (!isHeaderSticky && yOffset > heroHeight) {
-        //   setIsHeaderSticky(true);
-        //   if (pathnameIncludes === true) {
-        //     nav.classList.add("lower-nav-fixed-mobile");
-        //   }
-        // }
-        // if (isHeaderSticky && yOffset < heroHeight) {
-        //   setIsHeaderSticky(false);
-        //   if (pathnameIncludes === true) {
-        //     nav.classList.remove("lower-nav-fixed-mobile");
-        //   }
-        // }
-      } else {
-        console.log("desktop size");
-        // if (!isHeaderSticky && yOffset > menuHeight) {
-        //   setIsHeaderSticky(true);
-        // }
-        // if (isHeaderSticky && yOffset < menuHeight) {
-        //   setIsHeaderSticky(false);
-        // }
-      }
-    }
-
-    window.addEventListener("scroll", handleHeader);
-
-    console.log("screenWidth");
-    console.log(screenWidth);
-
-    console.log("pathnameIncludes");
-    console.log(pathnameIncludes);
-  }, [screenWidth]);
+  console.log("screenWidth");
+  console.log(screenWidth);
 
   return (
     <div className="price-list-page">
@@ -85,6 +45,14 @@ const PriceListPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
+      <HeaderPrice
+        language={language}
+        setLanguage={setLanguage}
+        languageToUse={languageToUse}
+        pathname={pathname}
+        isHeaderSticky={isHeaderSticky}
+        setIsHeaderSticky={setIsHeaderSticky}
+      />
       <div className="price-list-hero" />
       <div
         className={`price-list-menu ${
