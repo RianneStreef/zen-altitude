@@ -16,14 +16,7 @@ import Contact from "../components/Contact";
 import top from "../images/top.png";
 
 const IndexPage = function (props) {
-  let {
-    language,
-    languageToUse,
-    setLanguage,
-    pathname,
-    isHeaderSticky,
-    setIsHeaderSticky,
-  } = props;
+  let { language, languageToUse, setLanguage, pathname } = props;
 
   language === "english"
     ? (languageToUse = content.english)
@@ -43,8 +36,6 @@ const IndexPage = function (props) {
         setLanguage={setLanguage}
         languageToUse={languageToUse}
         pathname={pathname}
-        isHeaderSticky={isHeaderSticky}
-        setIsHeaderSticky={setIsHeaderSticky}
       />
       <Hero language={language} languageToUse={languageToUse} />
       <Intro language={language} languageToUse={languageToUse} />

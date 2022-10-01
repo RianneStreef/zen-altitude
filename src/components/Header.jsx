@@ -13,15 +13,7 @@ import { content } from "../content/languages";
 import "../styles/Header.css";
 
 const Header = (props) => {
-  let {
-    language,
-    languageToUse,
-    setLanguage,
-    pathname,
-    isHeaderSticky,
-    setIsHeaderSticky,
-    screenWidth,
-  } = props;
+  let { language, languageToUse, setLanguage, pathname } = props;
 
   function handleSetLanguage(language) {
     setLanguage(language);
@@ -49,12 +41,6 @@ const Header = (props) => {
         setHeaderBackground(false);
         links.classList.remove("background");
       }
-
-      // if (y === 0 && width > 768) {
-      //   setHeaderBackground(false);
-      // } else {
-      //   setHeaderBackground(true);
-      // }
     }
   });
 

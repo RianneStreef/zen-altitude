@@ -27,6 +27,7 @@ const Products = (props) => {
       let positionImage1 = productImage1.getBoundingClientRect();
       let positionImage2 = productImage2.getBoundingClientRect();
       let positionImage3 = productImage3.getBoundingClientRect();
+
       if (positionImage1.y < scrollY) {
         productText1.classList.add("remove-margin-right");
         productImage1.classList.add("slide-from-right");
@@ -60,20 +61,17 @@ const Products = (props) => {
             </div>
           </div>
           <div
-            className="product-description slide-image-right"
+            className="product-description slide-image-right product-image product-image-1"
             id="product-image-1"
-          >
-            <div className="product-image product-image-1" />
-          </div>
+          />
         </div>
 
         <div className="product">
           <div
-            className="product-description slide-image-left"
+            className="product-description slide-image-left product-image product-image-2"
             id="product-image-2"
-          >
-            <div className="product-image product-image-2" />
-          </div>
+          />
+
           <div
             className="product-description product-description-text-right"
             id="soin-jambes"
@@ -106,11 +104,9 @@ const Products = (props) => {
             </div>
           </div>
           <div
-            className="product-description slide-image-right"
+            className="product-description slide-image-right product-image product-image-3"
             id="product-image-3"
-          >
-            <div className="product-image product-image-3 " />
-          </div>
+          />
         </div>
         <div className="center-button-container">
           <Link to="/price-list" className="button">

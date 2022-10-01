@@ -40,7 +40,7 @@ const HeaderPrice = (props) => {
       const menuHeight = 413;
 
       if (screenWidth <= 768) {
-        // console.log("mobile size");
+        console.log("mobile size");
         const nav = document.getElementById("navbar");
         if (!isHeaderSticky && yOffset > heroHeight) {
           setIsHeaderSticky(true);
@@ -52,7 +52,7 @@ const HeaderPrice = (props) => {
           nav.classList.remove("lower-nav-fixed-mobile");
         }
       } else {
-        // console.log("desktop size");
+        console.log("desktop size");
         if (!isHeaderSticky && yOffset > menuHeight) {
           setIsHeaderSticky(true);
         }
@@ -60,30 +60,31 @@ const HeaderPrice = (props) => {
           setIsHeaderSticky(false);
         }
       }
-    }
-    window.addEventListener("scroll", handleHeader);
 
-    window.addEventListener("scroll", scrollnav);
+      function scrollnav() {
+        let links = document.getElementById("links");
 
-    function scrollnav() {
-      let links = document.getElementById("links");
+        let y = window.scrollY;
+        let width = window.innerWidth;
 
-      let y = window.scrollY;
-      let width = window.innerWidth;
+        if (y > 0 && width > 768) {
+          setHeaderBackground(true);
+          links.classList.add("background");
+        } else {
+          setHeaderBackground(false);
+          links.classList.remove("background");
+        }
 
-      if (y > 0 && width > 768) {
-        setHeaderBackground(true);
-        links.classList.add("background");
-      } else {
-        setHeaderBackground(false);
-        links.classList.remove("background");
+        // if (y === 0 && width > 768) {
+        //   setHeaderBackground(false);
+        // } else {
+        //   setHeaderBackground(true);
+        // }
       }
 
-      // if (y === 0 && width > 768) {
-      //   setHeaderBackground(false);
-      // } else {
-      //   setHeaderBackground(true);
-      // }
+      window.addEventListener("scroll", handleHeader);
+
+      window.addEventListener("scroll", scrollnav);
     }
   }, [screenWidth]);
 

@@ -2,8 +2,10 @@ export const french = {
   language: "french",
 
   indexTitle: "Zen Altitude || Les Bellville",
-  metaDescription: "French  description",
-  metaKeywords: "French  keywords",
+  metaDescription:
+    "Massages et soins à domicile. Accordez vous un instant de sérénité et de pure détente. Prenez le temps de vous ressources!",
+  metaKeywords:
+    "Massage à domicile, Val Thorens, Les Belleville, massage, soin visage, soin jambes",
 
   soinVisagePageTitle: "Soin Visage || Zen Altitude",
   massagePageTitle: "Massages || Zen Altitude",
