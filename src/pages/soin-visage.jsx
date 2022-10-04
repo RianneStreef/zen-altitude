@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import "../styles/soin-visage.css";
 
 import Layout from "../components/Layout";
+import HeaderPrice from "../components/HeaderPrice";
 
 import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
@@ -44,6 +45,7 @@ const SoinVisagePage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
+      <HeaderPrice />
       <div className="soin-visage-hero" />
       <div
         className={`price-list-menu ${

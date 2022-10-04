@@ -25,21 +25,21 @@ const Header = (props) => {
 
   let [headerBackground, setHeaderBackground] = useState(false);
 
+  let headerLinks = document.getElementById("headerLinks");
+
   useEffect(() => {
     window.addEventListener("scroll", scrollnav);
 
     function scrollnav() {
-      let links = document.getElementById("links");
-
       let y = window.scrollY;
       let width = window.innerWidth;
 
       if (y > 0 && width > 768) {
         setHeaderBackground(true);
-        links.classList.add("background");
+        headerLinks.classList.add("background");
       } else {
         setHeaderBackground(false);
-        links.classList.remove("background");
+        headerLinks.classList.remove("background");
       }
     }
   });
@@ -64,7 +64,7 @@ const Header = (props) => {
         <Link to="/" className="logo-link hidden-mobile">
           <img src={logo} alt="Logo" className="header-logo" />
         </Link>
-        <ul className="links hidden-mobile" id="links">
+        <ul className="links hidden-mobile" id="headerLinks">
           <li>
             <Link
               to="/"

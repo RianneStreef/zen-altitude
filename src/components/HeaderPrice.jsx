@@ -13,80 +13,32 @@ import { content } from "../content/languages";
 import "../styles/Header.css";
 
 const HeaderPrice = (props) => {
-  let {
-    language,
-    languageToUse,
-    setLanguage,
-    pathname,
-    isHeaderSticky,
-    setIsHeaderSticky,
-    screenWidth,
-  } = props;
+  let { language, languageToUse, setLanguage, pathname } = props;
 
-  function handleSetLanguage(language) {
-    setLanguage(language);
-    localStorage.setItem("languageInStorage", language);
-  }
-
-  language === "english" ? (languageToUse = content.english) : null;
-  language === "french" ? (languageToUse = content.french) : null;
+  language === "english"
+    ? (languageToUse = content.english)
+    : (languageToUse = content.french);
 
   let [headerBackground, setHeaderBackground] = useState(false);
 
   useEffect(() => {
+    window.addEventListener("scroll", handleHeader);
+
     function handleHeader() {
-      const heroHeight = window.innerHeight * 0.6;
-      const yOffset = window.scrollY;
-      const menuHeight = 413;
+      let priceLinks = document.getElementById("priceLinks");
 
-      if (screenWidth <= 768) {
-        console.log("mobile size");
-        const nav = document.getElementById("navbar");
-        if (!isHeaderSticky && yOffset > heroHeight) {
-          setIsHeaderSticky(true);
-          nav.classList.add("lower-nav-fixed-mobile");
-        }
-        if (isHeaderSticky && yOffset < heroHeight) {
-          setIsHeaderSticky(false);
+      let y = window.scrollY;
+      let width = window.innerWidth;
 
-          nav.classList.remove("lower-nav-fixed-mobile");
-        }
+      if (y > 0 && width > 768) {
+        setHeaderBackground(true);
+        priceLinks.classList.add("background");
       } else {
-        console.log("desktop size");
-        if (!isHeaderSticky && yOffset > menuHeight) {
-          setIsHeaderSticky(true);
-        }
-        if (isHeaderSticky && yOffset < menuHeight) {
-          setIsHeaderSticky(false);
-        }
+        setHeaderBackground(false);
+        priceLinks.classList.remove("background");
       }
-
-      function scrollnav() {
-        let links = document.getElementById("links");
-
-        let y = window.scrollY;
-        let width = window.innerWidth;
-
-        if (y > 0 && width > 768) {
-          setHeaderBackground(true);
-          links.classList.add("background");
-        } else {
-          setHeaderBackground(false);
-          links.classList.remove("background");
-        }
-
-        // if (y === 0 && width > 768) {
-        //   setHeaderBackground(false);
-        // } else {
-        //   setHeaderBackground(true);
-        // }
-      }
-
-      window.addEventListener("scroll", handleHeader);
-
-      window.addEventListener("scroll", scrollnav);
     }
-  }, [screenWidth]);
+  });
 
   return (
     <>
@@ -108,7 +60,7 @@ const HeaderPrice = (props) => {
         <Link to="/" className="logo-link hidden-mobile">
           <img src={logo} alt="Logo" className="header-logo" />
         </Link>
-        <ul className="links hidden-mobile" id="links">
+        <ul className="links hidden-mobile" id="priceLinks">
           <li>
             <Link
               to="/"

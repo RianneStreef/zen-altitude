@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
@@ -8,31 +7,21 @@ const Layout = ({ children }) => {
   let languageToUse = "";
 
   const [pathname, setPathname] = useState("/");
-
-  let pathnameIncludes;
-
-  const [screenWidth, setScreenWidth] = useState(0);
-  const [isHeaderSticky, setIsHeaderSticky] = useState(false);
+  const [screenWidth, setScreenWidth] = useState();
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
+
     function handleResize() {
       const newSize = window.innerWidth;
       setScreenWidth(newSize);
+      console.log("setting screenWidth");
     }
-    window.addEventListener("resize", handleResize);
+
     setPathname(window.location.href);
-  }, [screenWidth, pathname]);
 
-  //  let languageInStorage = "";
-
-  // useEffect(() => {
-  //   if (localStorage.getItem("languageInStorage")) {
-  //     setLanguage(languageInStorage);
-  //     console.log("language found");
-  //     console.log(languageInStorage);
-  //   }
-  // }, []);
+    window.addEventListener("resize", handleResize);
+  }, [pathname]);
 
   const childrenWithProps = React.Children.map(children, (child) =>
     React.cloneElement(child, {
@@ -40,11 +29,8 @@ const Layout = ({ children }) => {
       setLanguage,
       languageToUse,
       pathname,
-      pathnameIncludes,
       screenWidth,
       setScreenWidth,
-      isHeaderSticky,
-      setIsHeaderSticky,
     })
   );
   return (

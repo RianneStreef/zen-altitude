@@ -16,25 +16,58 @@ import massage2 from "../images/pregnant.jpeg";
 import massage3 from "../images/child-massage.jpeg";
 
 const PriceListPage = function (props) {
-  let {
-    language,
-    languageToUse,
-    setLanguage,
-    screenWidth,
-    pathname,
-    isHeaderSticky,
-    setIsHeaderSticky,
-  } = props;
+  let { language, languageToUse, setLanguage, screenWidth } = props;
 
   language === "english"
     ? (languageToUse = content.english)
     : (languageToUse = content.french);
 
-  console.log("pathname");
-  console.log(pathname);
+  const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
-  console.log("screenWidth");
-  console.log(screenWidth);
+  useEffect(() => {
+    window.addEventListener("scroll", handleHeaderMenu);
+    let y = window.scrollY;
+
+    console.log("y");
+    console.log(y);
+
+    const heroHeight = window.innerHeight * 0.6;
+    const menuHeight = 160;
+
+    console.log(screenWidth);
+    console.log("screenWidth > 768");
+    console.log(screenWidth > 768);
+
+    console.log("isHeaderSticky");
+    console.log(isHeaderSticky);
+
+    console.log("menuHeight");
+    console.log(menuHeight);
+
+    function handleHeaderMenu() {
+      if (screenWidth < 769) {
+        console.log("mobile size");
+        const nav = document.getElementById("navbar");
+        if (!isHeaderSticky && y > heroHeight) {
+          setIsHeaderSticky(true);
+          nav.classList.add("lower-nav-fixed-mobile");
+        }
+        if (isHeaderSticky && y < heroHeight) {
+          setIsHeaderSticky(false);
+          nav.classList.remove("lower-nav-fixed-mobile");
+        }
+      } else if (screenWidth > 768) {
+        console.log("desktop size");
+        const yOffset = window.scrollY;
+        if (!isHeaderSticky && yOffset > menuHeight) {
+          setIsHeaderSticky(true);
+        }
+        if (isHeaderSticky && yOffset < menuHeight) {
+          setIsHeaderSticky(false);
+        }
+      }
+    }
+  });
 
   return (
     <div className="price-list-page">
@@ -49,9 +82,7 @@ const PriceListPage = function (props) {
         language={language}
         setLanguage={setLanguage}
         languageToUse={languageToUse}
-        pathname={pathname}
-        isHeaderSticky={isHeaderSticky}
-        setIsHeaderSticky={setIsHeaderSticky}
+        screenWidth={screenWidth}
       />
       <div className="price-list-hero" />
       <div

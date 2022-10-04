@@ -35,7 +35,6 @@ const IndexPage = function (props) {
         language={language}
         setLanguage={setLanguage}
         languageToUse={languageToUse}
-        pathname={pathname}
       />
       <Hero language={language} languageToUse={languageToUse} />
       <Intro language={language} languageToUse={languageToUse} />
