@@ -25,10 +25,9 @@ const Header = (props) => {
 
   let [headerBackground, setHeaderBackground] = useState(false);
 
-  let headerLinks = document.getElementById("headerLinks");
-
   useEffect(() => {
     window.addEventListener("scroll", scrollnav);
+    let headerLinks = document.getElementById("headerLinks");
 
     function scrollnav() {
       let y = window.scrollY;
