@@ -28,21 +28,10 @@ const PriceListPage = function (props) {
     window.addEventListener("scroll", handleHeaderMenu);
     let y = window.scrollY;
 
-    console.log("y");
-    console.log(y);
-
     const heroHeight = window.innerHeight * 0.6;
     const menuHeight = 160;
 
     console.log(screenWidth);
-    console.log("screenWidth > 768");
-    console.log(screenWidth > 768);
-
-    console.log("isHeaderSticky");
-    console.log(isHeaderSticky);
-
-    console.log("menuHeight");
-    console.log(menuHeight);
 
     function handleHeaderMenu() {
       if (screenWidth < 769) {

@@ -13,7 +13,7 @@ import Intro from "../components/Intro";
 import Products from "../components/Products";
 import Contact from "../components/Contact";
 
-import top from "../images/top.png";
+import top from "../images/top.svg";
 
 const IndexPage = function (props) {
   let { language, languageToUse, setLanguage, pathname } = props;

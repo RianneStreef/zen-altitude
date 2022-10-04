@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import { content } from "../content/languages";
-import introImage from "../images/intro-image.png";
+import introImage from "../images/fanny.jpg";
 
 import "../styles/Intro.css";
 
