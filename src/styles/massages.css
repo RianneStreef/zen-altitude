@@ -22,20 +22,8 @@
   flex-direction: column;
 }
 
-.product-image-pregnant {
-  background-image: url("../images/pregnant.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
-
-.product-image-children {
-  background-image: url("../images/child-massage.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
+#product-image-4, #product-image-5 {
+  display: none;
 }
 
 .massages-title {
@@ -55,6 +43,23 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .product-image-pregnant {
+    background-image: url("../images/pregnant.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  
+  .product-image-children {
+    background-image: url("../images/child-massage.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
   }
 
 }

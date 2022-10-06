@@ -75,7 +75,7 @@ const Navbar = (props) => {
       <Ul open={open}>
         <li>
           <Link to="/" className="nav-link" onClick={() => setOpen(!open)}>
-            Welcome
+            Zen Altitude
           </Link>
         </li>
         <li>

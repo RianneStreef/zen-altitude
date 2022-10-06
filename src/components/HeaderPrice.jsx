@@ -23,9 +23,10 @@ const HeaderPrice = (props) => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleHeader);
+    let priceLinks = document.getElementById("priceLinks");
+
 
     function handleHeader() {
-      let priceLinks = document.getElementById("priceLinks");
 
       let y = window.scrollY;
       let width = window.innerWidth;

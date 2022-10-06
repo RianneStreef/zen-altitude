@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.price-list {
+  padding: 20px;
+}
+
 .price-list-hero {
   min-height: 60vh;
   background-image: url("../images/spa-deco.jpeg");
@@ -49,17 +53,21 @@
 .price-list-part {
   width: fit-content;
   height: fit-content;
-  padding: 50px;
+  padding: 10px;
   line-height: 50px;
   margin: 10px;
-}
-
-.price-list-part {
   border: 1px solid lightgray;
 }
 
+
+.price-list-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .price-list-image {
-  width: 45%;
+  width: 40%;
   height: 30%;
   margin: 10px;
 }
@@ -109,6 +117,10 @@
     flex-wrap: wrap;
     justify-content: center;
     height: fit-content;
+  }
+
+  .price-list-part {
+    padding: 50px;
   }
 }
 

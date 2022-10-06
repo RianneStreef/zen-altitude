@@ -113,8 +113,8 @@ const PriceListPage = function (props) {
         <div className="price-list-container">
           <div className="price-list-images">
             <img src={massage1} alt="" className="price-list-image" />
-            <img src={massage2} alt="" className="price-list-image" />
-            <img src={massage3} alt="" className="price-list-image" />
+            <img src={massage2} alt="" className="price-list-image hidden-mobile" />
+            <img src={massage3} alt="" className="price-list-image hidden-mobile" />
           </div>
           <ul className="price-list-part">
             <li>30 minutes : 50€</li>
@@ -137,8 +137,8 @@ const PriceListPage = function (props) {
         <div className="price-list-container price-list-container-inverse">
           <div className="price-list-images">
             <img src={massage1} alt="" className="price-list-image" />
-            <img src={massage2} alt="" className="price-list-image" />
-            <img src={massage3} alt="" className="price-list-image" />
+            <img src={massage2} alt="" className="price-list-image hidden-mobile" />
+            <img src={massage3} alt="" className="price-list-image hidden-mobile" />
           </div>
 
           <ul className="price-list-part">
@@ -153,8 +153,8 @@ const PriceListPage = function (props) {
         <div className="price-list-container">
           <div className="price-list-images">
             <img src={massage1} alt="" className="price-list-image" />
-            <img src={massage2} alt="" className="price-list-image" />
-            <img src={massage3} alt="" className="price-list-image" />
+            <img src={massage2} alt="" className="price-list-image hidden-mobile" />
+            <img src={massage3} alt="" className="price-list-image hidden-mobile" />
           </div>
           <ul className="price-list-part">
             <h3>{languageToUse.soinVisageFemmeTitle}</h3>

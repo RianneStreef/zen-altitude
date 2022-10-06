@@ -21,7 +21,7 @@ textarea {
 }
 
 .contact-card {
-  margin: 10px;
+  margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
@@ -30,13 +30,17 @@ textarea {
   justify-content: center;
   align-items: center;
   /* padding: 20px; */
-  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .contact {
     margin: 50px;
     padding: 0 50px 100px 50px;
+  }
+
+  .contact-card {
+    width: 100%;
+
   }
 }
 
