@@ -2,50 +2,34 @@
   overflow: hidden;
 }
 
+.soin-visage-card-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+}
+
 .soin-visage-hero {
   min-height: 60vh;
   background-image: url("../images/hero-soin-visage.jpeg");
-  background-size: cover;
-  background-repeat: none;
-  background-position: center;
   width: 100vw;
 }
 
 .soin-visage-femme {
   background-image: url("../images/soin-visage-femme.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 40vh;
-  width: 100%;
-  display: flex;
 }
 
 .soin-visage-homme {
   background-image: url("../images/soin-visage-homme.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 40vh;
-  width: 100%;
-  display: flex;
 }
 
 .soin-yeux {
   background-image: url("../images/soin-jeux.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 40vh;
-  width: 100%;
-  display: flex;
 }
 
 .soin-barbier {
   background-image: url("../images/soin-barbier.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 40vh;
-  width: 100%;
-  display: flex;
 }
 
 #femme,
@@ -87,6 +71,9 @@
   }
   .soin-visage-card {
     width: 100%;
+  }
+  .soin-visage-card-image {
+    width: 100%
   }
 }
 

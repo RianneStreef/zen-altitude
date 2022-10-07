@@ -138,12 +138,12 @@ export const french = {
 
   contact: "Contact",
   contactIntro: "Contact intro",
-  name: "Name",
+  name: "Nom",
   email: "Email",
   message: "Message",
-  send: "Send",
+  send: "Envoyer",
 
-  thanks: "Thank you for your message!",
+  thanks: "Merci pour votre message!",
 
   rights: "Tous droits réservés.",
   legal: "Mentions légales",
