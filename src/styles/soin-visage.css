@@ -11,6 +11,43 @@
   width: 100vw;
 }
 
+.soin-visage-femme {
+  background-image: url("../images/soin-visage-femme.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+}
+
+.soin-visage-homme {
+  background-image: url("../images/soin-visage-homme.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+}
+
+.soin-yeux {
+  background-image: url("../images/soin-jeux.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+}
+
+.soin-barbier {
+  background-image: url("../images/soin-barbier.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+}
+
 #femme,
 #homme {
   position: relative;

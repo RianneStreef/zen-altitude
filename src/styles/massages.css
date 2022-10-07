@@ -44,6 +44,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  #product-image-4, #product-image-5 {
+    display: flex;
+  }
+
   .product-image-pregnant {
     background-image: url("../images/pregnant.jpeg");
     background-size: cover;
