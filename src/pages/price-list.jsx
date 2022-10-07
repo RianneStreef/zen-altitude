@@ -15,6 +15,13 @@ import massage1 from "../images/massage.jpeg";
 import massage2 from "../images/pregnant.jpeg";
 import massage3 from "../images/child-massage.jpeg";
 
+import soinJambes1 from "../images/soin-jambes.jpeg";
+
+
+import soinVisage1 from "../images/soin-visage-femme.jpeg"
+import soinVisage2 from "../images/soin-visage-homme.jpeg"
+import soinVisage3 from "../images/soin-jeux.jpeg"
+
 const PriceListPage = function (props) {
   let { language, languageToUse, setLanguage, screenWidth } = props;
 
@@ -136,9 +143,8 @@ const PriceListPage = function (props) {
 
         <div className="price-list-container price-list-container-inverse">
           <div className="price-list-images">
-            <img src={massage1} alt="" className="price-list-image" />
-            <img src={massage2} alt="" className="price-list-image hidden-mobile" />
-            <img src={massage3} alt="" className="price-list-image hidden-mobile" />
+            <img src={soinJambes1} alt="" className="price-list-image price-image-large" />
+
           </div>
 
           <ul className="price-list-part">
@@ -152,9 +158,9 @@ const PriceListPage = function (props) {
 
         <div className="price-list-container">
           <div className="price-list-images">
-            <img src={massage1} alt="" className="price-list-image" />
-            <img src={massage2} alt="" className="price-list-image hidden-mobile" />
-            <img src={massage3} alt="" className="price-list-image hidden-mobile" />
+            <img src={soinVisage1} alt="" className="price-list-image" />
+            <img src={soinVisage2} alt="" className="price-list-image hidden-mobile" />
+            <img src={soinVisage3} alt="" className="price-list-image hidden-mobile" />
           </div>
           <ul className="price-list-part">
             <h3>{languageToUse.soinVisageFemmeTitle}</h3>
