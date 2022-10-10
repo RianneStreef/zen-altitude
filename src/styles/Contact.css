@@ -8,6 +8,7 @@ textarea {
   border-bottom: 1px solid black;
   width: 99%;
   margin: auto;
+  background-color: transparent;
 }
 
 .form-container {
@@ -30,6 +31,7 @@ textarea {
   justify-content: center;
   align-items: center;
   /* padding: 20px; */
+  background-image: url("../images//contact-background-transparent.jpg");
 }
 
 @media only screen and (min-width: 768px) {

@@ -30,6 +30,9 @@ const PriceListPage = function (props) {
 
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
+  console.log("screenWidth");
+  console.log(screenWidth);
+
   useEffect(() => {
     window.addEventListener("scroll", handleHeaderMenu);
 
@@ -37,29 +40,35 @@ const PriceListPage = function (props) {
     const menuHeight = 160;
 
     function handleHeaderMenu() {
-      if (screenWidth && screenWidth < 769) {
-        console.log("mobile size");
-
+      console.log("screenWidth");
+      console.log(screenWidth);
+      if (screenWidth < 769) {
         let yPrice = window.scrollY;
+        console.log("mobile size");
+        console.log("screenWidth");
+        console.log(screenWidth);
+        console.log(typeof screenWidth);
 
-        const nav = document.getElementById("navbar-price");
-        if (!isHeaderSticky && yPrice > heroHeight) {
-          setIsHeaderSticky(true);
-          nav.classList.add("lower-nav-fixed-mobile");
-        }
-        if (isHeaderSticky && yPrice < heroHeight) {
-          setIsHeaderSticky(false);
-          nav.classList.remove("lower-nav-fixed-mobile");
-        }
-      } else if (screenWidth && screenWidth > 768) {
+        // const nav = document.getElementById("navbar-price");
+        // if (!isHeaderSticky && yPrice > heroHeight) {
+        //   setIsHeaderSticky(true);
+        //   nav.classList.add("lower-nav-fixed-mobile");
+        // }
+        // if (isHeaderSticky && yPrice < heroHeight) {
+        //   setIsHeaderSticky(false);
+        //   nav.classList.remove("lower-nav-fixed-mobile");
+        // }
+      } else {
         let yPrice = window.scrollY;
         console.log("desktop size");
-        if (!isHeaderSticky && yPrice > menuHeight) {
-          setIsHeaderSticky(true);
-        }
-        if (isHeaderSticky && yPrice < menuHeight) {
-          setIsHeaderSticky(false);
-        }
+        console.log("screenWidth");
+        console.log(screenWidth);
+        // if (!isHeaderSticky && yPrice > menuHeight) {
+        //   setIsHeaderSticky(true);
+        // }
+        // if (isHeaderSticky && yPrice < menuHeight) {
+        //   setIsHeaderSticky(false);
+        // }
       }
     }
   });

@@ -12,7 +12,10 @@
 
 .soin-visage-hero {
   min-height: 60vh;
-  background-image: url("../images/hero-soin-visage.jpeg");
+  background-image: url("../images/hero-soin-visage.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100vw;
 }
 
@@ -73,7 +76,7 @@
     width: 100%;
   }
   .soin-visage-card-image {
-    width: 100%
+    width: 100%;
   }
 }
 
