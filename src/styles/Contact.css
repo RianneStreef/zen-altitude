@@ -32,6 +32,8 @@ textarea {
   align-items: center;
   /* padding: 20px; */
   background-image: url("../images//contact-background-transparent.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (min-width: 768px) {

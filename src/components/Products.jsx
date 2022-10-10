@@ -110,7 +110,7 @@ const Products = (props) => {
         </div>
         <div className="center-button-container">
           <Link to="/price-list" className="button">
-            Price List
+            {languageToUse.priceList}
           </Link>
         </div>
       </div>

@@ -26,11 +26,11 @@ export const french = {
 
   welcome: "Bienvenu chez Zen Altitude ",
   introText1:
-    "Professionnelle du bien être depuis 13 ans, je vous propose mes services de massage à domicile (ou en cabine de soin à Val Thorens)  et soin du visage homme, femme, ados ( uniquement en cabine de soin à Val Thorens) dans toute la vallée des Belleville (Val Thorens, les Menuires et St martin de Belleville).",
+    "Professionnelle du bien être depuis 14 ans, je vous propose mes services de massage et soins du visage à domicile (ou en cabine de soin à Val Thorens) .",
   introText2:
-    "Je me déplace avec tout le matériel nécessaire afin de créer un véritable espace de détente et de relaxation. Je peux également vous accueillir à Val Thorens à mon domicile ou une cabine de massage vous ais entièrement dédiée.",
+    "Je me déplace avec tout le matériel nécessaire afin de créer un véritable espace de détente et de relaxation. Je peux également vous accueillir à Val Thorens (à mon domicile) ou une cabine de massage vous ais entièrement dédiée.",
   introText3:
-    "Toutes mes huiles de massages sont issues de l’agriculture biologique et sont adaptées en fonction de vos besoins et de vos envies.",
+    "Mes huiles de massages sont issues de l’agriculture biologique et sont adaptées en fonction de vos besoins et de vos envies.",
   introText4:
     "Je vous invite à me contacter si vous souhaitez plus de renseignements.",
 
@@ -47,7 +47,7 @@ export const french = {
   product2Li3: "- Facilite le drainage et la décontraction musculaire",
   product2Text2: "Durée du soin : 60 minutes.",
 
-  product3Title: "Soin de visage",
+  product3Title: "Soin du visage",
   product3Text:
     "Soin pour femmes et hommes qui est destiné à préserver la propreté du visage, à l'embellir, le raffermir, le tonifier ou le régénérer. ",
 
@@ -56,6 +56,7 @@ export const french = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at gravida arcu, eget mollis est. Integer et mauris id odio eleifend mattis id in erat. Donec scelerisque accumsan turpis non convallis. Praesent dignissim rhoncus magna, eu dignissim metus. Proin erat odio, accumsan vel arcu nec, scelerisque dignissim mauris. Fusce faucibus enim vel sollicitudin placerat. Proin lectus metus, faucibus ac purus et, hendrerit posuere mi. Duis a pharetra felis. Aliquam eu malesuada risus, ac dapibus tellus. Vestibulum quam nisi, aliquet in sodales non, dignissim id arcu. Morbi sed velit metus. Nulla scelerisque efficitur nisi, in vestibulum justo auctor vitae. Pellentesque suscipit vulputate tellus, id tincidunt nibh bibendum eu. ",
 
   moreInfo: "Plus d'informations",
+  priceList: "Liste des prix",
 
   pregnantTitle: "MASSAGE PRENATAL",
   pregnantText1:

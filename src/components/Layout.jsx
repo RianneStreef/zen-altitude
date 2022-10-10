@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   let languageToUse = "";
 
   const [pathname, setPathname] = useState("/");
-  const [screenWidth, setScreenWidth] = useState();
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
     setPathname(window.location.href);
 
     window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [pathname, screenWidth]);
 
   const childrenWithProps = React.Children.map(children, (child) =>
