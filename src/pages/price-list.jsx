@@ -43,7 +43,7 @@ const PriceListPage = function (props) {
     function handleHeaderMenu() {
       if (screenWidth < 769) {
         console.log("mobile size");
-        const nav = document.getElementById("navbar");
+        const nav = document.getElementById("navbar-price");
         if (!isHeaderSticky && y > heroHeight) {
           setIsHeaderSticky(true);
           nav.classList.add("lower-nav-fixed-mobile");

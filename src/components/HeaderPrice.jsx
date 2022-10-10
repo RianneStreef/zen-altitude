@@ -49,7 +49,7 @@ const HeaderPrice = (props) => {
       </div>
       <div
         className={`header ${headerBackground ? "header-background" : ""}`}
-        id="navbar"
+        id="navbar-price"
       >
         <div className="hidden-desktop">
           <Burger
