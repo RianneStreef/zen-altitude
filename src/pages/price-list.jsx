@@ -17,10 +17,9 @@ import massage3 from "../images/child-massage.jpeg";
 
 import soinJambes1 from "../images/soin-jambes.jpeg";
 
-
-import soinVisage1 from "../images/soin-visage-femme.jpeg"
-import soinVisage2 from "../images/soin-visage-homme.jpeg"
-import soinVisage3 from "../images/soin-jeux.jpeg"
+import soinVisage1 from "../images/soin-visage-femme.jpeg";
+import soinVisage2 from "../images/soin-visage-homme.jpeg";
+import soinVisage3 from "../images/soin-jeux.jpeg";
 
 const PriceListPage = function (props) {
   let { language, languageToUse, setLanguage, screenWidth } = props;
@@ -33,40 +32,26 @@ const PriceListPage = function (props) {
 
   useEffect(() => {
     window.addEventListener("scroll", handleHeaderMenu);
-    
 
     const heroHeight = window.innerHeight * 0.6;
     const menuHeight = 160;
 
-    console.log(screenWidth);
-
     function handleHeaderMenu() {
-      if (screenWidth < 769) {
+      if (screenWidth && screenWidth < 769) {
         console.log("mobile size");
 
         let yPrice = window.scrollY;
 
-        console.log('isHeaderSticky');
-        console.log(isHeaderSticky);
-        console.log('y');
-        console.log(yPrice);
-        console.log('heroHeight');
-        console.log(heroHeight);
-
-
         const nav = document.getElementById("navbar-price");
         if (!isHeaderSticky && yPrice > heroHeight) {
-          console.log("set to sticky")
           setIsHeaderSticky(true);
           nav.classList.add("lower-nav-fixed-mobile");
         }
         if (isHeaderSticky && yPrice < heroHeight) {
-          console.log("set to un-sticky")
-
           setIsHeaderSticky(false);
           nav.classList.remove("lower-nav-fixed-mobile");
         }
-      } else if (screenWidth > 768) {
+      } else if (screenWidth && screenWidth > 768) {
         let yPrice = window.scrollY;
         console.log("desktop size");
         if (!isHeaderSticky && yPrice > menuHeight) {
@@ -134,8 +119,16 @@ const PriceListPage = function (props) {
         <div className="price-list-container">
           <div className="price-list-images">
             <img src={massage1} alt="" className="price-list-image" />
-            <img src={massage2} alt="" className="price-list-image hidden-mobile" />
-            <img src={massage3} alt="" className="price-list-image hidden-mobile" />
+            <img
+              src={massage2}
+              alt=""
+              className="price-list-image hidden-mobile"
+            />
+            <img
+              src={massage3}
+              alt=""
+              className="price-list-image hidden-mobile"
+            />
           </div>
           <ul className="price-list-part">
             <li>30 minutes : 50€</li>
@@ -157,8 +150,11 @@ const PriceListPage = function (props) {
 
         <div className="price-list-container price-list-container-inverse">
           <div className="price-list-images">
-            <img src={soinJambes1} alt="" className="price-list-image price-image-large" />
-
+            <img
+              src={soinJambes1}
+              alt=""
+              className="price-list-image price-image-large"
+            />
           </div>
 
           <ul className="price-list-part">
@@ -173,8 +169,16 @@ const PriceListPage = function (props) {
         <div className="price-list-container">
           <div className="price-list-images">
             <img src={soinVisage1} alt="" className="price-list-image" />
-            <img src={soinVisage2} alt="" className="price-list-image hidden-mobile" />
-            <img src={soinVisage3} alt="" className="price-list-image hidden-mobile" />
+            <img
+              src={soinVisage2}
+              alt=""
+              className="price-list-image hidden-mobile"
+            />
+            <img
+              src={soinVisage3}
+              alt=""
+              className="price-list-image hidden-mobile"
+            />
           </div>
           <ul className="price-list-part">
             <h3>{languageToUse.soinVisageFemmeTitle}</h3>

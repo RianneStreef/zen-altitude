@@ -16,8 +16,8 @@ textarea {
 }
 
 .contact-form {
-  width: 90%;
-  padding: 20px;
+  width: 95%;
+  margin: auto;
 }
 
 .contact-card {
@@ -40,7 +40,6 @@ textarea {
 
   .contact-card {
     width: 100%;
-
   }
 }
 

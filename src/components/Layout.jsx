@@ -15,13 +15,12 @@ const Layout = ({ children }) => {
     function handleResize() {
       const newSize = window.innerWidth;
       setScreenWidth(newSize);
-      console.log("setting screenWidth");
     }
 
     setPathname(window.location.href);
 
     window.addEventListener("resize", handleResize);
-  }, [pathname]);
+  }, [pathname, screenWidth]);
 
   const childrenWithProps = React.Children.map(children, (child) =>
     React.cloneElement(child, {
