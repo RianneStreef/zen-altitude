@@ -33,7 +33,7 @@ const PriceListPage = function (props) {
 
   useEffect(() => {
     window.addEventListener("scroll", handleHeaderMenu);
-    let y = window.scrollY;
+    
 
     const heroHeight = window.innerHeight * 0.6;
     const menuHeight = 160;
@@ -43,22 +43,36 @@ const PriceListPage = function (props) {
     function handleHeaderMenu() {
       if (screenWidth < 769) {
         console.log("mobile size");
+
+        let yPrice = window.scrollY;
+
+        console.log('isHeaderSticky');
+        console.log(isHeaderSticky);
+        console.log('y');
+        console.log(yPrice);
+        console.log('heroHeight');
+        console.log(heroHeight);
+
+
         const nav = document.getElementById("navbar-price");
-        if (!isHeaderSticky && y > heroHeight) {
+        if (!isHeaderSticky && yPrice > heroHeight) {
+          console.log("set to sticky")
           setIsHeaderSticky(true);
           nav.classList.add("lower-nav-fixed-mobile");
         }
-        if (isHeaderSticky && y < heroHeight) {
+        if (isHeaderSticky && yPrice < heroHeight) {
+          console.log("set to un-sticky")
+
           setIsHeaderSticky(false);
           nav.classList.remove("lower-nav-fixed-mobile");
         }
       } else if (screenWidth > 768) {
+        let yPrice = window.scrollY;
         console.log("desktop size");
-        const yOffset = window.scrollY;
-        if (!isHeaderSticky && yOffset > menuHeight) {
+        if (!isHeaderSticky && yPrice > menuHeight) {
           setIsHeaderSticky(true);
         }
-        if (isHeaderSticky && yOffset < menuHeight) {
+        if (isHeaderSticky && yPrice < menuHeight) {
           setIsHeaderSticky(false);
         }
       }
