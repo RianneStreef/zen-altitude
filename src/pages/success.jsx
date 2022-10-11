@@ -29,6 +29,7 @@ const SuccessPage = function (props) {
         language={language}
         setLanguage={setLanguage}
         languageToUse={languageToUse}
+        fontColor="black"
       />
       <div className="header-placeholder" />
       <p>{languageToUse.thanks}</p>

@@ -37,7 +37,6 @@ const PriceListPage = function (props) {
     window.addEventListener("scroll", handleHeaderMenu);
 
     const heroHeight = window.innerHeight * 0.6;
-    const menuHeight = 160;
 
     function handleHeaderMenu() {
       const newSize = window.innerWidth;
@@ -45,25 +44,21 @@ const PriceListPage = function (props) {
 
       if (screenWidth !== undefined) {
         if (window.innerWidth < 769) {
-          let yPrice = window.scrollY;
- 
-
           const nav = document.getElementById("navbar-price");
-          if (!isHeaderSticky && yPrice > heroHeight) {
+          if (!isHeaderSticky && window.scrollY > heroHeight) {
             setIsHeaderSticky(true);
             nav.classList.add("lower-nav-fixed-mobile");
           }
-          if (isHeaderSticky && yPrice < heroHeight) {
+          if (isHeaderSticky && window.scrollY < heroHeight) {
             setIsHeaderSticky(false);
             nav.classList.remove("lower-nav-fixed-mobile");
           }
-        } else {
-          let yPrice = window.scrollY;
- 
-          if (!isHeaderSticky && yPrice > menuHeight) {
+        }
+        if (window.innerWidth > 768) {
+          if (!isHeaderSticky && window.scrollY > heroHeight) {
             setIsHeaderSticky(true);
           }
-          if (isHeaderSticky && yPrice < menuHeight) {
+          if (isHeaderSticky && window.scrollY < heroHeight) {
             setIsHeaderSticky(false);
           }
         }

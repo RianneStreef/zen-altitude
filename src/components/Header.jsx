@@ -13,7 +13,7 @@ import { content } from "../content/languages";
 import "../styles/Header.css";
 
 const Header = (props) => {
-  let { language, languageToUse, setLanguage, pathname } = props;
+  let { language, languageToUse, setLanguage, pathname, fontColor } = props;
 
   function handleSetLanguage(language) {
     setLanguage(language);
@@ -26,6 +26,15 @@ const Header = (props) => {
   let [headerBackground, setHeaderBackground] = useState(false);
 
   useEffect(() => {
+    let navLink1 = document.getElementById("nav-link1");
+    let navLink2 = document.getElementById("nav-link2");
+    let navLink3 = document.getElementById("nav-link3");
+    let navLink4 = document.getElementById("nav-link4");
+
+    navLink1.style.color = fontColor;
+    navLink2.style.color = fontColor;
+    navLink3.style.color = fontColor;
+    navLink4.style.color = fontColor;
     window.addEventListener("scroll", scrollnav);
     let headerLinks = document.getElementById("headerLinks");
 
@@ -72,6 +81,7 @@ const Header = (props) => {
                   ? "active"
                   : ""
               }`}
+              id="nav-link1"
             >
               Zen Altitude
             </Link>
@@ -85,6 +95,7 @@ const Header = (props) => {
                   ? "active"
                   : ""
               }`}
+              id="nav-link2"
             >
               {languageToUse.soins}
             </Link>
@@ -98,6 +109,7 @@ const Header = (props) => {
                   ? "active"
                   : ""
               }`}
+              id="nav-link3"
             >
               Contact
             </Link>
@@ -111,6 +123,7 @@ const Header = (props) => {
                   ? "active"
                   : ""
               }`}
+              id="nav-link4"
             >
               {languageToUse.prices}
             </Link>
