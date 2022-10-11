@@ -30,9 +30,11 @@
   height: 100%;
 }
 
-.product-image-1,   .product-image-2,   .product-image-3 {
+.product-image-1,
+.product-image-2,
+.product-image-3 {
   display: none;
-} 
+}
 
 .product-description h2,
 .product-description p,
@@ -47,12 +49,7 @@
   width: 100%;
 }
 
-
-
 @media only screen and (min-width: 768px) {
-  .products {
-  }
-
   .product {
     flex-direction: row;
   }
@@ -64,17 +61,15 @@
 
   .product-image-1 {
     background-image: url("../images/massage.jpeg");
-    display: flex
+    display: flex;
   }
   .product-image-2 {
     background-image: url("../images/soin-jambes.jpeg");
-    display: flex
-
+    display: flex;
   }
   .product-image-3 {
     background-image: url("../images/soin-visage.jpeg");
-    display: flex
-
+    display: flex;
   }
 
   .products-container {

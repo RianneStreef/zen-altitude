@@ -43,33 +43,30 @@ const PriceListPage = function (props) {
       const newSize = window.innerWidth;
       setScreenWidth(newSize);
 
-      // if (screenWidth !== undefined) {
-      if (window.innerWidth < 769) {
-        let yPrice = window.scrollY;
-        console.log("mobile size");
-        console.log(screenWidth);
+      if (screenWidth !== undefined) {
+        if (window.innerWidth < 769) {
+          let yPrice = window.scrollY;
+ 
 
-        const nav = document.getElementById("navbar-price");
-        if (!isHeaderSticky && yPrice > heroHeight) {
-          setIsHeaderSticky(true);
-          nav.classList.add("lower-nav-fixed-mobile");
+          const nav = document.getElementById("navbar-price");
+          if (!isHeaderSticky && yPrice > heroHeight) {
+            setIsHeaderSticky(true);
+            nav.classList.add("lower-nav-fixed-mobile");
+          }
+          if (isHeaderSticky && yPrice < heroHeight) {
+            setIsHeaderSticky(false);
+            nav.classList.remove("lower-nav-fixed-mobile");
+          }
+        } else {
+          let yPrice = window.scrollY;
+ 
+          if (!isHeaderSticky && yPrice > menuHeight) {
+            setIsHeaderSticky(true);
+          }
+          if (isHeaderSticky && yPrice < menuHeight) {
+            setIsHeaderSticky(false);
+          }
         }
-        if (isHeaderSticky && yPrice < heroHeight) {
-          setIsHeaderSticky(false);
-          nav.classList.remove("lower-nav-fixed-mobile");
-        }
-      } else {
-        let yPrice = window.scrollY;
-        console.log("desktop size");
-        console.log(screenWidth);
-
-        if (!isHeaderSticky && yPrice > menuHeight) {
-          setIsHeaderSticky(true);
-        }
-        if (isHeaderSticky && yPrice < menuHeight) {
-          setIsHeaderSticky(false);
-        }
-        // }
       }
     }
     return () => window.removeEventListener("resize", handleHeaderMenu);

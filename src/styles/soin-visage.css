@@ -72,12 +72,6 @@
   .soin-visage-card {
     margin: 50px 0;
   }
-  .soin-visage-card {
-    width: 100%;
-  }
-  .soin-visage-card-image {
-    width: 100%;
-  }
 }
 
 @media only screen and (min-width: 1200px) {

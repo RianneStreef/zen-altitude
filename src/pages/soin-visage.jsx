@@ -45,7 +45,7 @@ const SoinVisagePage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
-      <HeaderPrice />
+      <HeaderPrice fontColor="black" />
       <div className="soin-visage-hero" />
       <div
         className={`price-list-menu ${
@@ -62,10 +62,10 @@ const SoinVisagePage = function (props) {
         <h1>{languageToUse.soinVisageTitle}</h1>
 
         <div id="femme" />
-       
+
         <h2>{languageToUse.soinVisageFemmeTitle}</h2>
 
-        <div className="soin-visage-card soin-visage-card-image soin-visage-femme"/>
+        <div className="soin-visage-card soin-visage-card-image soin-visage-femme" />
 
         <div className="soin-visage-card">
           <h3>{languageToUse.soinVisageFemme1}</h3>
@@ -113,8 +113,7 @@ const SoinVisagePage = function (props) {
           <p>{languageToUse.soinVisageFemme6Description}</p>
         </div>
 
-        <div className="soin-visage-card soin-visage-card-image soin-yeux"/>
-
+        <div className="soin-visage-card soin-visage-card-image soin-yeux" />
 
         <div className="soin-visage-card">
           <h3>{languageToUse.soinVisageFemme7}</h3>
@@ -127,12 +126,9 @@ const SoinVisagePage = function (props) {
 
         <div id="homme" />
 
-
-
         <h2>{languageToUse.soinVisageHommeTitle}</h2>
 
-        <div className="soin-visage-card soin-visage-card-image soin-visage-homme"/>
-
+        <div className="soin-visage-card soin-visage-card-image soin-visage-homme" />
 
         <div className="soin-visage-card">
           <h3>{languageToUse.soinVisageHomme2}</h3>
@@ -145,8 +141,7 @@ const SoinVisagePage = function (props) {
           <p>{languageToUse.soinVisageHomme3Description}</p>
         </div>
 
-        <div className="soin-visage-card soin-visage-card-image soin-barbier"/>
-
+        <div className="soin-visage-card soin-visage-card-image soin-barbier" />
 
         <div className="soin-visage-card">
           <h3>{languageToUse.soinVisageHomme1}</h3>

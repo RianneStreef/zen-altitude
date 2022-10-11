@@ -4,19 +4,18 @@ import { Helmet } from "react-helmet";
 import "../styles/success.css";
 
 import Layout from "../components/Layout";
+import Header from "../components/Header";
 
 import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
 
 const SuccessPage = function (props) {
-  let { language, languageToUse } = props;
+  let { language, languageToUse, setLanguage } = props;
 
   language === "english"
     ? (languageToUse = content.english)
     : (languageToUse = content.french);
 
-  console.log(languageToUse);
-  console.log(languageToUse.metaKeywords);
   return (
     <div className="success">
       <Helmet>
@@ -26,6 +25,11 @@ const SuccessPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
+      <Header
+        language={language}
+        setLanguage={setLanguage}
+        languageToUse={languageToUse}
+      />
       <div className="header-placeholder" />
       <p>{languageToUse.thanks}</p>
     </div>
