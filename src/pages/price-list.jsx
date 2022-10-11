@@ -22,56 +22,58 @@ import soinVisage2 from "../images/soin-visage-homme.jpeg";
 import soinVisage3 from "../images/soin-jeux.jpeg";
 
 const PriceListPage = function (props) {
-  let { language, languageToUse, setLanguage, screenWidth } = props;
+  let { language, languageToUse, setLanguage } = props;
 
   language === "english"
     ? (languageToUse = content.english)
     : (languageToUse = content.french);
 
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
-
-  console.log("screenWidth");
-  console.log(screenWidth);
+  const [screenWidth, setScreenWidth] = useState();
 
   useEffect(() => {
+    setScreenWidth(window.innerWidth);
+
     window.addEventListener("scroll", handleHeaderMenu);
 
     const heroHeight = window.innerHeight * 0.6;
     const menuHeight = 160;
 
     function handleHeaderMenu() {
-      console.log("screenWidth");
-      console.log(screenWidth);
-      if (screenWidth < 769) {
+      const newSize = window.innerWidth;
+      setScreenWidth(newSize);
+
+      // if (screenWidth !== undefined) {
+      if (window.innerWidth < 769) {
         let yPrice = window.scrollY;
         console.log("mobile size");
-        console.log("screenWidth");
         console.log(screenWidth);
-        console.log(typeof screenWidth);
 
-        // const nav = document.getElementById("navbar-price");
-        // if (!isHeaderSticky && yPrice > heroHeight) {
-        //   setIsHeaderSticky(true);
-        //   nav.classList.add("lower-nav-fixed-mobile");
-        // }
-        // if (isHeaderSticky && yPrice < heroHeight) {
-        //   setIsHeaderSticky(false);
-        //   nav.classList.remove("lower-nav-fixed-mobile");
-        // }
+        const nav = document.getElementById("navbar-price");
+        if (!isHeaderSticky && yPrice > heroHeight) {
+          setIsHeaderSticky(true);
+          nav.classList.add("lower-nav-fixed-mobile");
+        }
+        if (isHeaderSticky && yPrice < heroHeight) {
+          setIsHeaderSticky(false);
+          nav.classList.remove("lower-nav-fixed-mobile");
+        }
       } else {
         let yPrice = window.scrollY;
         console.log("desktop size");
-        console.log("screenWidth");
         console.log(screenWidth);
-        // if (!isHeaderSticky && yPrice > menuHeight) {
-        //   setIsHeaderSticky(true);
-        // }
-        // if (isHeaderSticky && yPrice < menuHeight) {
-        //   setIsHeaderSticky(false);
+
+        if (!isHeaderSticky && yPrice > menuHeight) {
+          setIsHeaderSticky(true);
+        }
+        if (isHeaderSticky && yPrice < menuHeight) {
+          setIsHeaderSticky(false);
+        }
         // }
       }
     }
-  });
+    return () => window.removeEventListener("resize", handleHeaderMenu);
+  }, [screenWidth]);
 
   return (
     <div className="price-list-page">
@@ -86,7 +88,6 @@ const PriceListPage = function (props) {
         language={language}
         setLanguage={setLanguage}
         languageToUse={languageToUse}
-        screenWidth={screenWidth}
       />
       <div className="price-list-hero" />
       <div

@@ -7,21 +7,10 @@ const Layout = ({ children }) => {
   let languageToUse = "";
 
   const [pathname, setPathname] = useState("/");
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    setScreenWidth(window.innerWidth);
-
-    function handleResize() {
-      const newSize = window.innerWidth;
-      setScreenWidth(newSize);
-    }
-
     setPathname(window.location.href);
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [pathname, screenWidth]);
+  }, [pathname]);
 
   const childrenWithProps = React.Children.map(children, (child) =>
     React.cloneElement(child, {
@@ -29,8 +18,6 @@ const Layout = ({ children }) => {
       setLanguage,
       languageToUse,
       pathname,
-      screenWidth,
-      setScreenWidth,
     })
   );
   return (
