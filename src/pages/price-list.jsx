@@ -86,7 +86,7 @@ const PriceListPage = function (props) {
         className={`price-list-menu ${
           isHeaderSticky ? "fixed-price-list-menu" : ""
         } 
-    }`}
+    `}
       >
         <Link to="/price-list#massages">
           {screenWidth > 767 ? (

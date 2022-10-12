@@ -1,0 +1,29 @@
+.header-price {
+  position: fixed;
+  top: 10px;
+  background-color: transparent;
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  transition: background-color 500ms ease;
+  z-index: 900;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-price {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    top: 40px;
+  }
+  .header-price ul {
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-price ul {
+    padding-right: 200px;
+  }
+}

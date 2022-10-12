@@ -10,7 +10,7 @@ import flagFr from "../images/icon-fr.png";
 
 import { content } from "../content/languages";
 
-import "../styles/Header.css";
+import "../styles/HeaderPrice.css";
 
 const HeaderPrice = (props) => {
   let { language, languageToUse, setLanguage, pathname, fontColor } = props;
@@ -56,7 +56,9 @@ const HeaderPrice = (props) => {
         <a href="tel:+33 6 03 77 80 70">+33 6 03 77 80 70</a>
       </div>
       <div
-        className={`header ${headerBackground ? "header-background" : ""}`}
+        className={`header-price ${
+          headerBackground ? "header-background" : ""
+        }`}
         id="navbar-price"
       >
         <div className="hidden-desktop">
