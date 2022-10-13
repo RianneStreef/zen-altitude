@@ -44,30 +44,27 @@ const PriceListPage = function (props) {
       const newSize = window.innerWidth;
       setScreenWidth(newSize);
 
-      if (screenWidth !== undefined) {
-        if (window.innerWidth < 769) {
-          const nav = document.getElementById("navbar-price");
-          if (!isHeaderSticky && window.scrollY > heroHeight) {
-            setIsHeaderSticky(true);
-            nav.classList.add("lower-nav-fixed-mobile");
-          }
-          if (isHeaderSticky && window.scrollY < heroHeight) {
-            setIsHeaderSticky(false);
-            nav.classList.remove("lower-nav-fixed-mobile");
-          }
+      if (window.innerWidth < 769) {
+        const nav = document.getElementById("navbar-price");
+        if (!isHeaderSticky && window.scrollY > heroHeight) {
+          setIsHeaderSticky(true);
+          nav.classList.add("lower-nav-fixed-mobile");
         }
-        if (window.innerWidth > 768) {
-          if (!isHeaderSticky && window.scrollY > heroHeight) {
-            setIsHeaderSticky(true);
-          }
-          if (isHeaderSticky && window.scrollY < heroHeight) {
-            setIsHeaderSticky(false);
-          }
+        if (isHeaderSticky && window.scrollY < heroHeight) {
+          setIsHeaderSticky(false);
+          nav.classList.remove("lower-nav-fixed-mobile");
+        }
+      }
+      if (window.innerWidth > 768) {
+        if (!isHeaderSticky && window.scrollY > heroHeight) {
+          setIsHeaderSticky(true);
+        }
+        if (isHeaderSticky && window.scrollY < heroHeight) {
+          setIsHeaderSticky(false);
         }
       }
     }
-    return () => window.removeEventListener("resize", handleHeaderMenu);
-  }, [screenWidth]);
+  });
 
   return (
     <div className="price-list-page">
