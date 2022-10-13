@@ -22,8 +22,32 @@
   flex-direction: column;
 }
 
-#product-image-4, #product-image-5 {
-  display: none;
+.massage-reverse {
+  flex-direction: column-reverse;
+}
+
+.product-image-general {
+  background-image: url("../images/child-massage.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+}
+
+.product-image-pregnant {
+  background-image: url("../images/pregnant.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+}
+
+.product-image-children {
+  background-image: url("../images/child-massage.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
 }
 
 .massages-title {
@@ -31,10 +55,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-
-  .massage {
-    flex-direction: row;
-  }
   .massages-title {
     padding: 0 50px;
   }
@@ -45,34 +65,16 @@
     justify-content: center;
   }
 
-  #product-image-4, #product-image-5 {
+  #product-image-4,
+  #product-image-5 {
     display: flex;
   }
-
-  .product-image-pregnant {
-    background-image: url("../images/pregnant.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    display: flex;
-  }
-  
-  .product-image-children {
-    background-image: url("../images/child-massage.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    display: flex;
-  }
-
 }
 
 @media only screen and (min-width: 1200px) {
-  /* .massages {
-    padding: 100px 200px;
-  } */
+  .massage {
+    flex-direction: row;
+  }
 
   .massages-title {
     padding: 0 200px;

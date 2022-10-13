@@ -23,14 +23,17 @@ const MassagesPage = function (props) {
 
     let productImage4 = document.getElementById("product-image-4");
     let productImage5 = document.getElementById("product-image-5");
+    let productImage6 = document.getElementById("product-image-6");
 
     let productText4 = document.getElementById("product-text-4");
     let productText5 = document.getElementById("product-text-5");
+    let productText6 = document.getElementById("product-text-6");
 
     function scrollImages() {
       let scrollY = window.innerHeight;
       let positionImage4 = productImage4.getBoundingClientRect();
       let positionImage5 = productImage5.getBoundingClientRect();
+      let positionImage6 = productImage6.getBoundingClientRect();
 
       if (positionImage4.y < scrollY) {
         productText4.classList.add("remove-margin-left");
@@ -39,6 +42,10 @@ const MassagesPage = function (props) {
       if (positionImage5.y < scrollY) {
         productImage5.classList.add("slide-from-right");
         productText5.classList.add("remove-margin-right");
+      }
+      if (positionImage6.y < scrollY) {
+        productImage6.classList.add("slide-from-left");
+        productText6.classList.add("remove-margin-left");
       }
     }
   });
@@ -67,31 +74,44 @@ const MassagesPage = function (props) {
 
       <div className="massages">
         <div className="massages-explanation">
+          <div className="massage massage-reverse">
+            <div
+              className="product-description product-description-text-left"
+              id="product-text-4"
+            >
+              <h2>{languageToUse.generalMassageTitle}</h2>
+              <p>{languageToUse.generalMassageText}</p>
+            </div>
+            <div
+              className="product-description slide-image-right product-image product-image-general"
+              id="product-image-4"
+            />
+          </div>
           <div className="massage">
             <div
               className="product-description slide-image-left product-image product-image-pregnant"
-              id="product-image-4"
+              id="product-image-5"
             />
             <div
               className="product-description product-description-text-right"
-              id="product-text-4"
+              id="product-text-5"
             >
               <h2>{languageToUse.pregnantTitle}</h2>
               <p>{languageToUse.pregnantText1}</p>
               <p>{languageToUse.pregnantText2}</p>
             </div>
           </div>
-          <div className="massage">
+          <div className="massage massage-reverse">
             <div
               className="product-description product-description-text-left"
-              id="product-text-5"
+              id="product-text-6"
             >
               <h2>{languageToUse.childTitle}</h2>
               <p>{languageToUse.childText}</p>
             </div>
             <div
               className="product-description slide-image-right product-image product-image-children"
-              id="product-image-5"
+              id="product-image-6"
             />
           </div>
         </div>

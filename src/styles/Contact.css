@@ -13,7 +13,6 @@ textarea {
 
 .form-container {
   width: 100%;
-  padding: 20px;
 }
 
 .contact-form {
@@ -37,14 +36,6 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) {
-  .contact {
-    margin: 50px;
-    padding: 0 50px 100px 50px;
-  }
-
-  .contact-card {
-    width: 100%;
-  }
 }
 
 @media only screen and (min-width: 1200px) {

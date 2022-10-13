@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.product-reverse {
+  flex-direction: column-reverse;
+}
+
 .product-description {
   min-height: 80vw;
 }
@@ -30,12 +34,6 @@
   height: 100%;
 }
 
-.product-image-1,
-.product-image-2,
-.product-image-3 {
-  display: none;
-}
-
 .product-description h2,
 .product-description p,
 .product-description ul {
@@ -45,33 +43,24 @@
 .product-image {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
+  height: stretch;
+  width: stretch;
+}
+
+.product-image-1 {
+  background-image: url("../images/massage.jpeg");
+  display: flex;
+}
+.product-image-2 {
+  background-image: url("../images/soin-jambes.jpeg");
+  display: flex;
+}
+.product-image-3 {
+  background-image: url("../images/soin-visage.jpeg");
+  display: flex;
 }
 
 @media only screen and (min-width: 768px) {
-  .product {
-    flex-direction: row;
-  }
-
-  .product-description {
-    width: 40vw;
-    min-height: 40vw;
-  }
-
-  .product-image-1 {
-    background-image: url("../images/massage.jpeg");
-    display: flex;
-  }
-  .product-image-2 {
-    background-image: url("../images/soin-jambes.jpeg");
-    display: flex;
-  }
-  .product-image-3 {
-    background-image: url("../images/soin-visage.jpeg");
-    display: flex;
-  }
-
   .products-container {
     flex-direction: column;
     flex-wrap: wrap;
@@ -80,6 +69,15 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .product {
+    flex-direction: row;
+  }
+
+  .product-description {
+    width: 40vw;
+    height: stretch;
+  }
+
   .product-description h2,
   .product-description p,
   .product-description ul {

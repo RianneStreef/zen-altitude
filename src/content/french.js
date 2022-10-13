@@ -59,6 +59,9 @@ export const french = {
   moreInfo: "Plus d'informations",
   priceList: "Liste des prix",
 
+  generalMassageTitle: "General massage title",
+  generalMassageText: "Generela massage text",
+
   pregnantTitle: "MASSAGE PRENATAL",
   pregnantText1:
     "Spécialement conçu pour accompagner la femme enceinte à partir du 4eme mois de grossesse, le massage prénatal offre un vrai moment de détente et de réconfort à la fois pour la maman mais aussi pour le bébé.",

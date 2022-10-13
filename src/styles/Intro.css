@@ -35,8 +35,8 @@
 
 @media only screen and (min-width: 768px) {
   .intro-text {
-    margin: 50px;
     padding: 50px;
+    margin: 50px;
   }
 
   .intro-image-container {
@@ -50,9 +50,8 @@
     flex-direction: row;
   }
   .intro-text {
-    margin: 100px 0 100px 200px;
+    margin: 100px 200px;
     padding: 50px 0;
-    width: 60%;
   }
 
   .intro-text h4,

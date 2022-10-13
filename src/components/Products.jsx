@@ -47,7 +47,7 @@ const Products = (props) => {
     <div className="products" id="soins">
       <div className="header-placeholder" />
       <div className="products-container">
-        <div className="product">
+        <div className="product product-reverse">
           <div
             className="product-description product-description-text-left"
             id="massage-intro"
@@ -90,7 +90,7 @@ const Products = (props) => {
           </div>
         </div>
 
-        <div className="product">
+        <div className="product product-reverse">
           <div
             className="product-description product-description-text-left"
             id="soins-visage-intro"
