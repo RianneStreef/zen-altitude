@@ -25,9 +25,6 @@ const Intro = (props) => {
           </Link>
         </div>
       </div>
-      <div className="intro-image-container">
-        <img src={introImage} alt="" className="intro-image" />
-      </div>
     </div>
   );
 };

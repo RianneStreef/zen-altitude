@@ -66,21 +66,26 @@ const MassagesPage = function (props) {
       <h1 className="massages-title">{languageToUse.product1Title}</h1>
 
       <div className="massages">
-
         <div className="massages-explanation">
           <div className="massage">
             <div
               className="product-description slide-image-left product-image product-image-pregnant"
               id="product-image-4"
             />
-            <div className="product-description product-description-text-right" id="product-text-4">
+            <div
+              className="product-description product-description-text-right"
+              id="product-text-4"
+            >
               <h2>{languageToUse.pregnantTitle}</h2>
               <p>{languageToUse.pregnantText1}</p>
               <p>{languageToUse.pregnantText2}</p>
             </div>
           </div>
           <div className="massage">
-            <div className="product-description product-description-text-left" id="product-text-5">
+            <div
+              className="product-description product-description-text-left"
+              id="product-text-5"
+            >
               <h2>{languageToUse.childTitle}</h2>
               <p>{languageToUse.childText}</p>
             </div>
@@ -90,13 +95,12 @@ const MassagesPage = function (props) {
             />
           </div>
         </div>
-        </div>
-        <div className="center-button-container">
-          <Link to="/price-list" className="button">
-            Price List
-          </Link>
-        </div>
- 
+      </div>
+      <div className="center-button-container">
+        <Link to="/price-list" className="button">
+          {languageToUse.priceList}
+        </Link>
+      </div>
     </div>
   );
 };

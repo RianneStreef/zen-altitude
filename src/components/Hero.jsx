@@ -18,6 +18,7 @@ const Hero = (props) => {
         </video>
         <div className="hero-text">
           <h1>{languageToUse.heroTitle}</h1>
+          <h3 className="hero-undertitle">{languageToUse.heroTitle2}</h3>
           <p>{languageToUse.heroText}</p>
         </div>
       </div>

@@ -3,7 +3,7 @@ export const french = {
 
   indexTitle: "Zen Altitude || Les Bellville",
   metaDescription:
-    "Massages et soins à domicile. Accordez vous un instant de sérénité et de pure détente. Prenez le temps de vous ressources!",
+    "Massages et soins à domicile. Accordez vous un instant de sérénité et de pure détente. Prenez le temps de vous ressourcer!",
   metaKeywords:
     "Massage à domicile, Val Thorens, Les Belleville, massage, soin visage, soin jambes",
 
@@ -20,13 +20,14 @@ export const french = {
   soins: "Soins",
   prices: "Tarifs",
 
-  heroTitle: "ZEN ALTITUDE - Massages et soins à domicile ",
+  heroTitle: "ZEN ALTITUDE",
+  heroTitle2: "Massages et soins à domicile",
   heroText:
-    " Accordez vous un instant de sérénité et de pure détente. Prenez le temps de vous ressources!",
+    " Accordez vous un instant de sérénité et de pure détente. Prenez le temps de vous ressourcer!",
 
-  welcome: "Bienvenu chez Zen Altitude ",
+  welcome: "Bienvenue chez Zen Altitude ",
   introText1:
-    "Professionnelle du bien être depuis 14 ans, je vous propose mes services de massage et soins du visage à domicile (ou en cabine de soin à Val Thorens) .",
+    "Professionnelle du bien être depuis 14 ans, je vous propose mes services de massage et soins du visage à domicile.",
   introText2:
     "Je me déplace avec tout le matériel nécessaire afin de créer un véritable espace de détente et de relaxation. Je peux également vous accueillir à Val Thorens (à mon domicile) ou une cabine de massage vous ais entièrement dédiée.",
   introText3:
@@ -124,8 +125,8 @@ export const french = {
   soinVisageHomme3: "BLACK CUMIN ",
 
   soinVisageHomme1Price: "25 MINUTES : 50€",
-  soinVisageHomme2Price: "25 MINUTES : 50€",
-  soinVisageHomme3Price: "25 MINUTES : 50€",
+  soinVisageHomme2Price: "60 MINUTES : 80€",
+  soinVisageHomme3Price: "60 MINUTES : 80€",
 
   soinVisageHomme1Description: "Soin visage éclat de fraicheur et barbe douce",
   soinVisageHomme2Description:
