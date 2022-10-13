@@ -47,7 +47,7 @@ const HeaderPrice = (props) => {
         priceLinks.classList.remove("background");
       }
     }
-  });
+  }, [headerBackground]);
 
   return (
     <>
