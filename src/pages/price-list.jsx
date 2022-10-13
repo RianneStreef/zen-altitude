@@ -21,6 +21,8 @@ import soinVisage1 from "../images/soin-visage-femme.jpeg";
 import soinVisage2 from "../images/soin-visage-homme.jpeg";
 import soinVisage3 from "../images/soin-jeux.jpeg";
 
+import giftVoucher from "../images/giftcard.jpg";
+
 const PriceListPage = function (props) {
   let { language, languageToUse, setLanguage } = props;
 
@@ -113,6 +115,12 @@ const PriceListPage = function (props) {
         </Link>
       </div>
       <div className="price-list">
+        <div className="gift-voucher">
+          <h2>{languageToUse.giftVoucher}</h2>
+          <p>{languageToUse.giftVoucherIntro}</p>
+          <img src={giftVoucher} className="gift-voucher" />
+        </div>
+
         <div id="massages" />
 
         <h2>{languageToUse.product1Title}</h2>

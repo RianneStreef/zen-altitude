@@ -137,6 +137,9 @@ export const french = {
   soinVisageHomme3Description:
     "Soin pour les peaux sensibles et réactives, Apaisant et hydratant ",
 
+  giftVoucher: "Bon de cadeau",
+  giftVoucherIntro: "Gift vouchers are available!",
+
   massage: "Massage",
   legs: "Jambes",
   face: "Visage",
