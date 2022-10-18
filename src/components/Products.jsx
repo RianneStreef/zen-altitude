@@ -49,7 +49,7 @@ const Products = (props) => {
       <div className="products-container">
         <div className="product product-reverse">
           <div
-            className="product-description product-description-text-left"
+            className="product-description product-text product-description-text-left"
             id="massage-intro"
           >
             <h2>{languageToUse.product1Title}</h2>
@@ -73,7 +73,7 @@ const Products = (props) => {
           />
 
           <div
-            className="product-description product-description-text-right"
+            className="product-description product-text product-description-text-right"
             id="soin-jambes"
           >
             <h2>{languageToUse.product2Title}</h2>
@@ -92,7 +92,7 @@ const Products = (props) => {
 
         <div className="product product-reverse">
           <div
-            className="product-description product-description-text-left"
+            className="product-description product-text product-description-text-left"
             id="soins-visage-intro"
           >
             <h2>{languageToUse.product3Title}</h2>
