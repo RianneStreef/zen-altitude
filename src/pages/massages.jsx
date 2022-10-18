@@ -76,7 +76,7 @@ const MassagesPage = function (props) {
         <div className="massages-explanation">
           <div className="massage massage-reverse">
             <div
-              className="product-description product-description-text-left"
+              className="product-description product-text  product-description-text-left"
               id="product-text-4"
             >
               <h2>{languageToUse.generalMassageTitle}</h2>
@@ -93,7 +93,7 @@ const MassagesPage = function (props) {
               id="product-image-5"
             />
             <div
-              className="product-description product-description-text-right"
+              className="product-description product-text product-description-text-right"
               id="product-text-5"
             >
               <h2>{languageToUse.pregnantTitle}</h2>
@@ -103,7 +103,7 @@ const MassagesPage = function (props) {
           </div>
           <div className="massage massage-reverse">
             <div
-              className="product-description product-description-text-left"
+              className="product-description product-text  product-description-text-left"
               id="product-text-6"
             >
               <h2>{languageToUse.childTitle}</h2>
