@@ -3,7 +3,7 @@ export const french = {
 
   indexTitle: "Zen Altitude || Les Bellville",
   metaDescription:
-    "Massages et soins à domicile. Accordez vous un instant de sérénité et de pure détente. Prenez le temps de vous ressourcer!",
+    "Massages et soins à domicile. Val Thorens, Les Menuires et Saint Martin de Belleville",
   metaKeywords:
     "Massage à domicile, Val Thorens, Les Belleville, massage, soin visage, soin jambes",
 
@@ -29,15 +29,14 @@ export const french = {
   introText1:
     "Professionnelle du bien être depuis 14 ans, je vous propose mes services de massage et soins du visage à domicile.",
   introText2:
-    "Je me déplace avec tout le matériel nécessaire afin de créer un véritable espace de détente et de relaxation. Je peux également vous accueillir à Val Thorens (à mon domicile) ou une cabine de massage vous ais entièrement dédiée.",
+    "Je me déplace avec tout le matériel nécessaire afin de créer un véritable espace de détente et de relaxation. Je peux également vous accueillir à Val Thorens (à mon domicile) ou une cabine de massage vous ai entièrement dédiée.",
+
   introText3:
-    "Mes huiles de massages sont issues de l’agriculture biologique et sont adaptées en fonction de vos besoins et de vos envies.",
-  introText4:
     "Je vous invite à me contacter si vous souhaitez plus de renseignements.",
 
   product1Title: "Massage sur mesure",
   product1Text:
-    "Intégralement adapté à votre besoin et état du moment le massage sur mesure permet de délier les tensions physiques tout en libérant votre psychique, l’objectif étant de vous recentrer au sein de votre corps. Composez votre massage comme vous le souhaitez. Nous conviendrons ensemble du massage qui vous sera le plus approprié.",
+    "Intégralement adapté à votre besoin et état du moment le massage sur mesure permet de délier les tensions physiques tout en libérant votre psychique, l’objectif étant de vous recentrer au sein de votre corps.",
 
   product2Title: "Soin speciale jambes légères",
   product2Text1:
@@ -52,15 +51,12 @@ export const french = {
   product3Text:
     "Soin pour femmes et hommes qui est destiné à préserver la propreté du visage, à l'embellir, le raffermir, le tonifier ou le régénérer. ",
 
-  product4Title: "Massage 4",
-  product4Text:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at gravida arcu, eget mollis est. Integer et mauris id odio eleifend mattis id in erat. Donec scelerisque accumsan turpis non convallis. Praesent dignissim rhoncus magna, eu dignissim metus. Proin erat odio, accumsan vel arcu nec, scelerisque dignissim mauris. Fusce faucibus enim vel sollicitudin placerat. Proin lectus metus, faucibus ac purus et, hendrerit posuere mi. Duis a pharetra felis. Aliquam eu malesuada risus, ac dapibus tellus. Vestibulum quam nisi, aliquet in sodales non, dignissim id arcu. Morbi sed velit metus. Nulla scelerisque efficitur nisi, in vestibulum justo auctor vitae. Pellentesque suscipit vulputate tellus, id tincidunt nibh bibendum eu. ",
-
   moreInfo: "Plus d'informations",
   priceList: "Liste des prix",
 
-  generalMassageTitle: "General massage title",
-  generalMassageText: "Generela massage text",
+  generalMassageTitle: "Massage sportif, relaxant, dynamique, lent..",
+  generalMassageText:
+    "Composez votre massage comme vous le souhaitez. Les massages sont entièrement personnalisés,  nous conviendrons ensemble du massage qui vous sera le plus approprié. Mes huiles de massages sont issues de l’agriculture biologique et sont adaptées en fonction de vos besoins.",
 
   pregnantTitle: "MASSAGE PRENATAL",
   pregnantText1:

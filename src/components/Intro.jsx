@@ -18,7 +18,6 @@ const Intro = (props) => {
         <p>{languageToUse.introText1}</p>
         <p>{languageToUse.introText2}</p>
         <p>{languageToUse.introText3}</p>
-        <p>{languageToUse.introText4}</p>
         <div className="button-container">
           <Link to="/#contact" className="button">
             Contact
