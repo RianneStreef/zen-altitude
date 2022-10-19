@@ -8,8 +8,9 @@
   background-image: url("../images/Mandala-transparent.png");
   background-size: cover;
   background-position: center;
-  
-  background-repeat: none;  padding: 20px 0 0 0;
+
+  background-repeat: none;
+  padding: 20px 0 0 0;
 }
 
 .footer-top {
@@ -17,7 +18,6 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  padding: 20px;
   overflow: hidden;
 }
 
