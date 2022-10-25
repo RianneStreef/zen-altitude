@@ -44,15 +44,15 @@
 }
 
 .product-image-1 {
-  background-image: url("../images/massage.jpeg");
+  background-image: url("../images/massage.jpg");
   display: flex;
 }
 .product-image-2 {
-  background-image: url("../images/soin-jambes.jpeg");
+  background-image: url("../images/soin-jambes.jpg");
   display: flex;
 }
 .product-image-3 {
-  background-image: url("../images/soin-visage.jpeg");
+  background-image: url("../images/soin-visage-femme.jpg");
   display: flex;
 }
 

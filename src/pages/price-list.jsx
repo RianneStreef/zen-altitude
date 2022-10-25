@@ -11,15 +11,15 @@ import HeaderPrice from "../components/HeaderPrice";
 import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
 
-import massage1 from "../images/massage.jpeg";
-import massage2 from "../images/pregnant.jpeg";
-import massage3 from "../images/child-massage.jpeg";
+import massage1 from "../images/massage.jpg";
+import massage2 from "../images/pregnant.jpg";
+import massage3 from "../images/child-massage.jpg";
 
-import soinJambes1 from "../images/soin-jambes.jpeg";
+import soinJambes1 from "../images/soin-jambes.jpg";
 
-import soinVisage1 from "../images/soin-visage-femme.jpeg";
-import soinVisage2 from "../images/soin-visage-homme.jpeg";
-import soinVisage3 from "../images/soin-jeux.jpeg";
+import soinVisage1 from "../images/soin-visage-femme.jpg";
+import soinVisage2 from "../images/soin-visage-homme.jpg";
+import soinVisage3 from "../images/soin-jeux.jpg";
 
 import giftVoucher from "../images/giftcard.jpg";
 

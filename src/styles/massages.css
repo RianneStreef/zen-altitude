@@ -1,6 +1,6 @@
 .massages-hero {
   min-height: 60vh;
-  background-image: url("../images/massage.jpeg");
+  background-image: url("../images/massage.jpg");
   background-size: cover;
   background-repeat: none;
   width: 100vw;
@@ -30,14 +30,14 @@
 }
 
 .product-image-general {
-  background-image: url("../images/child-massage.jpeg");
+  background-image: url("../images/oil.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
 }
 
 .product-image-pregnant {
-  background-image: url("../images/pregnant.jpeg");
+  background-image: url("../images/pregnant.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -45,7 +45,7 @@
 }
 
 .product-image-children {
-  background-image: url("../images/child-massage.jpeg");
+  background-image: url("../images/child-massage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
