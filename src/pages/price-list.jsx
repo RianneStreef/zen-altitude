@@ -221,6 +221,10 @@ const PriceListPage = function (props) {
             </li>
           </ul>
         </div>
+        <h2>{languageToUse.travelExpenses}</h2>
+        <p>Val Thorens: 10€</p>
+        <p>Les Menuires: 20€</p>
+        <p>St Martin de Belleville: 20€</p>
       </div>
     </div>
   );
