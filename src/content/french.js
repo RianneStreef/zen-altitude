@@ -29,7 +29,7 @@ export const french = {
   introText1:
     "Professionnelle du bien être depuis 14 ans, je vous propose mes services de massage et soins du visage à domicile.",
   introText2:
-    "Je me déplace avec tout le matériel nécessaire afin de créer un véritable espace de détente et de relaxation. Je peux également vous accueillir à Val Thorens (à mon domicile) ou une cabine de massage vous ai entièrement dédiée.",
+    "Je me déplace avec tout le matériel nécessaire afin de créer un véritable espace de détente et de relaxation. Je peux également vous accueillir à Val Thorens (à mon domicile) ou une cabine de massage vous est entièrement dédiée.",
 
   introText3:
     "Je vous invite à me contacter si vous souhaitez plus de renseignements.",
@@ -54,7 +54,7 @@ export const french = {
   moreInfo: "Plus d'informations",
   priceList: "Liste des prix",
 
-  generalMassageTitle: "Massage sportif, relaxant, dynamique, lent..",
+  generalMassageTitle: "Massage sportif, relaxant...",
   generalMassageText:
     "Composez votre massage comme vous le souhaitez. Les massages sont entièrement personnalisés,  nous conviendrons ensemble du massage qui vous sera le plus approprié. Mes huiles de massages sont issues de l’agriculture biologique et sont adaptées en fonction de vos besoins.",
 
@@ -133,8 +133,8 @@ export const french = {
   soinVisageHomme3Description:
     "Soin pour les peaux sensibles et réactives, Apaisant et hydratant ",
 
-  giftVoucher: "Bon de cadeau",
-  giftVoucherIntro: "Gift vouchers are available!",
+  giftVoucher: "Offrez un bon cadeau",
+  giftVoucherIntro: "",
 
   travelExpenses: "Frais de déplacement",
 

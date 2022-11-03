@@ -112,12 +112,6 @@ const PriceListPage = function (props) {
         </Link>
       </div>
       <div className="price-list">
-        <div className="gift-voucher">
-          <h2>{languageToUse.giftVoucher}</h2>
-          <p>{languageToUse.giftVoucherIntro}</p>
-          <img src={giftVoucher} className="gift-voucher" />
-        </div>
-
         <div id="massages" />
 
         <h2>{languageToUse.product1Title}</h2>
@@ -225,6 +219,12 @@ const PriceListPage = function (props) {
         <p>Val Thorens: 10€</p>
         <p>Les Menuires: 20€</p>
         <p>St Martin de Belleville: 20€</p>
+
+        <div className="gift-voucher-container">
+          <h2>{languageToUse.giftVoucher}</h2>
+          <p>{languageToUse.giftVoucherIntro}</p>
+          <img src={giftVoucher} className="gift-voucher" />
+        </div>
       </div>
     </div>
   );

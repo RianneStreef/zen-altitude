@@ -67,7 +67,7 @@ const MassagesPage = function (props) {
         setLanguage={setLanguage}
         languageToUse={languageToUse}
       />
-      <div className="massages-hero" />
+      {/* <div className="massages-hero" /> */}
 
       <div className="header-placeholder" />
       <h1 className="massages-title">{languageToUse.product1Title}</h1>
