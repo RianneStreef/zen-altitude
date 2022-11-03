@@ -35,12 +35,12 @@ const Footer = (props) => {
                   +33 (0) 6 03 77 80 70{" "}
                 </a>
               </li>
-              <li className="footer-contact-item">
+              {/* <li className="footer-contact-item">
                 <a href="mailto:">
                   <img src={mail} className="footer-contact-icon" alt="" />
                   mail
                 </a>
-              </li>
+              </li> */}
               <li className="footer-contact-item">
                 <img src={location} className="footer-contact-icon" alt="" />
                 Val Thorens, Les Belleville, France
