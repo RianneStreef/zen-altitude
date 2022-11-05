@@ -1,5 +1,5 @@
-export const french = {
-  language: "french",
+export const english = {
+  language: "english",
 
   indexTitle: "Zen Altitude || Les Bellville",
   metaDescription:
