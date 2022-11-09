@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `new`,
+    title: `Zen Altitude`,
     siteUrl: `https://zenaltitude-lesbelleville.com`,
   },
   plugins: [
