@@ -29,7 +29,7 @@ const IndexPage = function (props) {
         <meta name="robots" content="index, follow" />
         <meta name="description" content={languageToUse.metaDescription} />
         <meta name="keywords" content={languageToUse.metaKeywords} />
-        <link rel="canonical" href={`http://{${intakeInfo.domainName}`} />
+        <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
       <Header
         language={language}
