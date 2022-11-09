@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `new`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://zenaltitude-lesbelleville.com`,
   },
   plugins: [
     "gatsby-plugin-image",
