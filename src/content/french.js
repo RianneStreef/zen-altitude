@@ -38,7 +38,7 @@ export const french = {
   product1Text:
     "Intégralement adapté à votre besoin et état du moment le massage sur mesure permet de délier les tensions physiques tout en libérant votre psychique, l’objectif étant de vous recentrer au sein de votre corps.",
 
-  product2Title: "Soin speciale jambes légères",
+  product2Title: "Soin special jambes légères",
   product2Text1:
     "Massage des jambes de 30 minutes + enveloppement argile/cryo et application de produits spécifiques. Procure un soulagement immédiat des douleurs articulaires et musculaires grâce à son effet froid.",
   product2Li1:
