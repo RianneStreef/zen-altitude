@@ -1,7 +1,7 @@
 const intakeInfo = {
   companyName: "Zen Altitude",
   companyAddress: "Les Belleville",
-  domainName: "www.zenaltitude-lesbelleville.com",
+  domainName: "https://www.zenaltitude-lesbelleville.com",
   contactEmail: "",
 
   siteName: "Zen Altitude",
