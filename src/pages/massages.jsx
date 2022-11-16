@@ -60,7 +60,7 @@ const MassagesPage = function (props) {
           content={languageToUse.metaDescriptionMassage}
         />
         <meta name="keywords" content={languageToUse.metaKeywords} />
-        <link rel="canonical" href={intakeInfo.domainName} />
+        <link rel="canonical" href={`${intakeInfo.domainName}/massages`} />
       </Helmet>
       <Header
         language={language}
