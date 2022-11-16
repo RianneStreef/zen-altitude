@@ -73,7 +73,10 @@ const PriceListPage = function (props) {
         <meta name="robots" content="index, follow" />
         <meta name="description" content={languageToUse.metaDescriptionPrice} />
         <meta name="keywords" content={languageToUse.metaKeywords} />
-        <link rel="canonical" href={intakeInfo.domainName} />
+        <link
+          rel="canonical"
+          href={`${intakeInfo.domainName}/price-list`}
+        />{" "}
       </Helmet>
       <HeaderPrice
         language={language}
