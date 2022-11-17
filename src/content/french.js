@@ -3,7 +3,7 @@ export const french = {
 
   indexTitle: "Zen Altitude || Les Bellville",
   metaDescription:
-    "Massages et soins à domicile. Val Thorens, Les Menuires et Saint Martin de Belleville",
+    "Massages et soins à domicile. Val Thorens, Les Menuires et Saint Martin de Belleville. Je me déplace avec tout le matériel nécessaire afin de créer un véritable espace de détente et de relaxation. Je peux également vous accueillir à Val Thorens (à mon domicile) ou une cabine de massage vous est entièrement dédiée. ",
   metaKeywords:
     "Massage à domicile, Val Thorens, Les Belleville, massage, soin visage, soin jambes",
 
