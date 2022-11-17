@@ -3,7 +3,7 @@ export const english = {
 
   indexTitle: "Zen Altitude || Les Bellville",
   metaDescription:
-    "Massages and spa treatments. Val Thorens, Les Menuires and Saint Martin de Belleville",
+    "Massages and spa treatments. Val Thorens, Les Menuires and Saint Martin de Belleville. Fully adapted to your needs, the personalized massage allows you to release physical tensions while releasing your psyche, the objective being to refocus you within your body. Compose your massage as you wish. We will agree together on which massage will be most appropriate for you.",
   metaKeywords:
     "Massages at home, Val Thorens, Les Belleville, massage, facials, leg care",
 
@@ -39,8 +39,7 @@ export const english = {
   product2Title: "Revitalizing treatment for tired legs",
   product2Text1:
     "30-minute leg massage + clay/cryo wrap and application of specific products. Provides immediate relief from joint and muscle pain thanks to its cold effect.",
-  product2Li1:
-    "-Improuves circulation and reduces  - Améliore le confort circulatoire et réduit la tonicité veineuse",
+  product2Li1: "-Improves circulation",
   product2Li2: "- Makes bruises fade faster",
   product2Li3: "- Facilitates drainage and muscle relaxation",
   product2Text2: "Duration of treatment: 60 minutes.",
