@@ -45,7 +45,7 @@ const SoinVisagePage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link
           rel="canonical"
-          href={`${intakeInfo.domainName}/soin-visages`}
+          href={`${intakeInfo.domainName}/soin-visages/`}
         />{" "}
       </Helmet>
       <HeaderPrice fontColor="black" />
