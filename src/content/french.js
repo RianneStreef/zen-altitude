@@ -79,8 +79,7 @@ export const french = {
   soinVisageFemme5: "Soin coup d'eclat",
   soinVisageFemme6: "Focus regard",
   soinVisageFemme7: "Pause de masque au collagene",
-  soinVisageFemme7UnderTitle:
-    "(Peut être inclus dans un soin du visage de votre choix femme ou homme)",
+  soinVisageFemme7UnderTitle: "(Uniquement en complément d'un soin du visage.)",
 
   soinVisageFemme1Price: "60 minutes : 80€",
   soinVisageFemme2Price: "60 minutes : 80€",
