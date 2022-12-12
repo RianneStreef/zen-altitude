@@ -74,13 +74,17 @@ const Navbar = (props) => {
     <div className="nav-bar">
       <Ul open={open}>
         <li>
-          <Link to="/" className="nav-link" onClick={() => setOpen(!open)}>
+          <Link
+            to={language === "french" ? "/" : "/en/"}
+            className="nav-link"
+            onClick={() => setOpen(!open)}
+          >
             Zen Altitude
           </Link>
         </li>
         <li>
           <Link
-            to="/#soins"
+            to={language === "french" ? "/#soins" : "/en/#soins"}
             className="nav-link"
             onClick={() => setOpen(!open)}
           >
@@ -89,7 +93,7 @@ const Navbar = (props) => {
         </li>
         <li>
           <Link
-            to="/#contact"
+            to={language === "french" ? "/#contact" : "/en/#contact"}
             className="nav-link"
             onClick={() => setOpen(!open)}
           >
@@ -97,27 +101,34 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li>
-          <Link to="/price-list" target="blank" onClick={() => setOpen(!open)}>
+          <Link
+            to={language === "french" ? "/price-list" : "/en/price-list"}
+            onClick={() => setOpen(!open)}
+          >
             {languageToUse.prices}
           </Link>
         </li>
 
         <li className="social-links-header">
           <div className="nav-item-language">
-            <img
-              src={flagEn}
-              onClick={() => handleSetLanguage("english")}
-              className={`flag ${
-                languageToUse.language === "english" ? "opaque" : "fade"
-              } `}
-            />
-            <img
-              src={flagFr}
-              onClick={() => handleSetLanguage("french")}
-              className={`flag ${
-                languageToUse.language === "french" ? "opaque" : "fade"
-              } `}
-            />
+            <Link to="/en/">
+              <img
+                src={flagEn}
+                onClick={() => handleSetLanguage("english")}
+                className={`flag ${
+                  languageToUse.language === "english" ? "opaque" : "fade"
+                } `}
+              />
+            </Link>
+            <Link to="/">
+              <img
+                src={flagFr}
+                onClick={() => handleSetLanguage("french")}
+                className={`flag ${
+                  languageToUse.language === "french" ? "opaque" : "fade"
+                } `}
+              />
+            </Link>
           </div>
         </li>
       </Ul>
