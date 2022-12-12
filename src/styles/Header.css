@@ -113,10 +113,6 @@
   height: 0;
 }
 
-.set-language {
-  display: none;
-}
-
 @media only screen and (min-width: 768px) {
   .header {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

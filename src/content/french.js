@@ -130,7 +130,7 @@ export const french = {
   soinVisageHomme2Description:
     "Soin pour tous types de peaux, nettoyant et hydratant",
   soinVisageHomme3Description:
-    "Soin pour les peaux sensibles et réactives, Apaisant et hydratant ",
+    "Soin pour les peaux sensibles et réactives, apaisant et hydratant ",
 
   giftVoucher: "Offrez un bon cadeau",
   giftVoucherIntro: "",
