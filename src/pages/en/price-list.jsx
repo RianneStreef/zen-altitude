@@ -2,31 +2,31 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 
-import "../styles/price-list.css";
+import "../../styles/price-list.css";
 
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
-import HeaderPrice from "../components/HeaderPrice";
+import HeaderPrice from "../../components/HeaderPrice";
 
-import { content } from "../content/languages";
-import intakeInfo from "../content/intake";
+import { content } from "../../content/languages";
+import intakeInfo from "../../content/intake";
 
-import massage1 from "../images/massage.jpg";
-import massage2 from "../images/pregnant.jpg";
-import massage3 from "../images/child-massage.jpg";
+import massage1 from "../../images/massage.jpg";
+import massage2 from "../../images/pregnant.jpg";
+import massage3 from "../../images/child-massage.jpg";
 
-import soinJambes1 from "../images/soin-jambes.jpg";
+import soinJambes1 from "../../images/soin-jambes.jpg";
 
-import soinVisage1 from "../images/soin-visage-femme.jpg";
-import soinVisage2 from "../images/soin-visage-homme.jpg";
-import soinVisage3 from "../images/soin-jeux.jpg";
+import soinVisage1 from "../../images/soin-visage-femme.jpg";
+import soinVisage2 from "../../images/soin-visage-homme.jpg";
+import soinVisage3 from "../../images/soin-jeux.jpg";
 
-import giftVoucher from "../images/giftcard.jpg";
+import giftVoucher from "../../images/giftcard.jpg";
 
 const PriceListPage = function (props) {
   let { language, languageToUse, setLanguage } = props;
 
-  languageToUse = content.french;
+  languageToUse = content.english;
 
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
   const [screenWidth, setScreenWidth] = useState();

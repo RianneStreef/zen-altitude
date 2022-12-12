@@ -3,18 +3,18 @@ import { Link } from "gatsby";
 
 import { Helmet } from "react-helmet";
 
-import "../styles/soin-visage.css";
+import "../../styles/soin-visage.css";
 
-import Layout from "../components/Layout";
-import HeaderPrice from "../components/HeaderPrice";
+import Layout from "../../components/Layout";
+import HeaderPrice from "../../components/HeaderPrice";
 
-import { content } from "../content/languages";
-import intakeInfo from "../content/intake";
+import { content } from "../../content/languages";
+import intakeInfo from "../../content/intake";
 
 const SoinVisagePage = function (props) {
   let { language, languageToUse } = props;
 
-  languageToUse = content.french;
+  languageToUse = content.english;
 
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 

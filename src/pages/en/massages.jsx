@@ -3,18 +3,18 @@ import { Link } from "gatsby";
 
 import { Helmet } from "react-helmet";
 
-import "../styles/massages.css";
+import "../../styles/massages.css";
 
-import Layout from "../components/Layout";
-import Header from "../components/Header";
+import Layout from "../../components/Layout";
+import Header from "../../components/Header";
 
-import { content } from "../content/languages";
-import intakeInfo from "../content/intake";
+import { content } from "../../content/languages";
+import intakeInfo from "../../content/intake";
 
 const MassagesPage = function (props) {
   let { language, languageToUse, setLanguage } = props;
 
-  languageToUse = content.french;
+  languageToUse = content.english;
 
   useEffect(() => {
     window.addEventListener("scroll", scrollImages);
