@@ -21,7 +21,11 @@ const IndexPage = function (props) {
 
   return (
     <div>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
         <title>{languageToUse.indexTitle}</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content={languageToUse.metaDescription} />

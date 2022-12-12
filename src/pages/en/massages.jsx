@@ -50,7 +50,11 @@ const MassagesPage = function (props) {
 
   return (
     <div>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
         <title>{languageToUse.massagesPageTitle}</title>
         <meta name="robots" content="index, follow" />
         <meta

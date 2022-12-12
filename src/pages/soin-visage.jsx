@@ -33,7 +33,11 @@ const SoinVisagePage = function (props) {
 
   return (
     <div>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "fr",
+        }}
+      >
         <title>{languageToUse.soinVisagePageTitle}</title>
         <meta name="robots" content="index, follow" />
         <meta

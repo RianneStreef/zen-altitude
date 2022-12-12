@@ -66,7 +66,11 @@ const PriceListPage = function (props) {
 
   return (
     <div className="price-list-page">
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "fr",
+        }}
+      >
         <title>{languageToUse.pricePageTitle}</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content={languageToUse.metaDescriptionPrice} />
