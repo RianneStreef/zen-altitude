@@ -108,11 +108,11 @@ const Products = (props) => {
             id="product-image-3"
           />
         </div>
-        <div className="center-button-container">
-          <Link to="/price-list" className="button">
-            {languageToUse.priceList}
-          </Link>
-        </div>
+      </div>
+      <div className="center-button-container">
+        <Link to="/price-list" className="button">
+          {languageToUse.priceList}
+        </Link>
       </div>
     </div>
   );
