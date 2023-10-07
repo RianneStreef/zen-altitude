@@ -7,6 +7,8 @@ import "../../styles/massages.css";
 
 import Layout from "../../components/Layout";
 import Header from "../../components/Header";
+import Consent from "../../components/Consent";
+
 
 import { content } from "../../content/languages";
 import intakeInfo from "../../content/intake";
@@ -64,6 +66,8 @@ const MassagesPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={`${intakeInfo.domainName}/massages/`} />
       </Helmet>
+      <Consent language={language} languageToUse={languageToUse} />
+
       <Header
         language={language}
         setLanguage={setLanguage}
