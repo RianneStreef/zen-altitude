@@ -24,17 +24,7 @@ module.exports = {
       },
       __key: "pages",
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: ["G-S8TPC4PLZ4"],
-        pluginConfig: {
-          head: true,
-        },
-        enableWebVitalsTracking: true,
-        respectDNT: true,
-      },
-    },
+
     {
       resolve: "gatsby-plugin-layout",
       options: {

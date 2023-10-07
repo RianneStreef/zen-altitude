@@ -1,0 +1,27 @@
+.cookie-text-header {
+  font-size: 30px;
+  margin: 5px;
+}
+.cookie-text {
+  margin: 5px;
+}
+
+#rcc-decline-button {
+  background-color: var(--color-background) !important;
+  border: 2px solid var(--color-highlight) !important;
+  font-family: "Quicksand" !important;
+}
+
+#rcc-confirm-button {
+  background-color: var(--color-highlight) !important;
+  color: var(--color-background-light);
+  font-family: "Quicksand" !important;
+}
+
+.CookieConsent {
+  background-color: var(--color-background) !important;
+}
+
+.CookieConsent button {
+  font-family: "Quicksand" !important;
+}

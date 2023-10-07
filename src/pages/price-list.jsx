@@ -7,6 +7,7 @@ import "../styles/price-list.css";
 import Layout from "../components/Layout";
 
 import HeaderPrice from "../components/HeaderPrice";
+import Consent from "../components/Consent";
 
 import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
@@ -80,6 +81,8 @@ const PriceListPage = function (props) {
           href={`${intakeInfo.domainName}/price-list`}
         />{" "}
       </Helmet>
+      <Consent language={language} languageToUse={languageToUse} />
+
       <HeaderPrice
         language={language}
         setLanguage={setLanguage}

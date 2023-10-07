@@ -146,6 +146,11 @@ export const english = {
 
   thanks: "Thank you for your message!",
 
+  cookieHeader: "WE VALUE YOUR PRIVACY!",
+  cookieText: "This website uses cookies to analyze our traffic.",
+  cookieAccept: "I accept!",
+  cookieDecline: "I decline..",
+
   rights: "All rights reserved.",
   legal: "Disclaimer",
 };

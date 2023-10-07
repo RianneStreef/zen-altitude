@@ -27,7 +27,9 @@
     "gatsby-source-filesystem": "^5.0.0",
     "gatsby-transformer-sharp": "^5.0.0",
     "react": "^18.2.0",
+    "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.6"
   }

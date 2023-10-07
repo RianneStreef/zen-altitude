@@ -7,6 +7,7 @@ import "../styles/soin-visage.css";
 
 import Layout from "../components/Layout";
 import HeaderPrice from "../components/HeaderPrice";
+import Consent from "../components/Consent";
 
 import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
@@ -50,6 +51,8 @@ const SoinVisagePage = function (props) {
           href={`${intakeInfo.domainName}/soin-visages/`}
         />{" "}
       </Helmet>
+      <Consent language={language} languageToUse={languageToUse} />
+
       <HeaderPrice fontColor="black" />
       <div className="soin-visage-hero" />
       <div

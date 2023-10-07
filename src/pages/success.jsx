@@ -5,6 +5,7 @@ import "../styles/success.css";
 
 import Layout from "../components/Layout";
 import Header from "../components/Header";
+import Consent from "../components/Consent";
 
 import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
@@ -25,6 +26,8 @@ const SuccessPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
+      <Consent language={language} languageToUse={languageToUse} />
+
       <Header
         language={language}
         setLanguage={setLanguage}

@@ -150,6 +150,11 @@ export const french = {
 
   thanks: "Merci pour votre message!",
 
+  cookieHeader: "NOUS RESPECTONS VOTRE VIE PRIVEE!",
+  cookieText: "Ce site web utilise des cookies pour analyser notre trafic.",
+  cookieAccept: "J'accepte !",
+  cookieDecline: "Je refuse..",
+
   rights: "Tous droits réservés.",
   legal: "Mentions légales",
 };

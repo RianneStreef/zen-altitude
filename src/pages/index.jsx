@@ -12,6 +12,7 @@ import Hero from "../components/Hero";
 import Intro from "../components/Intro";
 import Products from "../components/Products";
 import Contact from "../components/Contact";
+import Consent from "../components/Consent";
 
 import top from "../images/top.svg";
 
@@ -33,6 +34,8 @@ const IndexPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
+      <Consent language={language} languageToUse={languageToUse} />
+
       <Header
         language={language}
         setLanguage={setLanguage}
