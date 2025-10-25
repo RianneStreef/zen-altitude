@@ -14,6 +14,10 @@ import "../styles/HeaderPrice.css";
 
 const HeaderPrice = (props) => {
   let { language, languageToUse, setLanguage, pathname, fontColor } = props;
+  function handleSetLanguage(language) {
+    setLanguage(language);
+    localStorage.setItem("languageInStorage", language);
+  }
 
   language === "english"
     ? (languageToUse = content.english)
@@ -145,7 +149,6 @@ const HeaderPrice = (props) => {
               </button>
               <button
                 onClick={() => handleSetLanguage("french")}
-                onKeyPress={() => handleSetLanguage("french")}
                 className="invisible-button"
               >
                 <img

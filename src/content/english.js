@@ -26,7 +26,7 @@ export const english = {
 
   welcome: "Welcome to Zen Altitude ",
   introText1:
-    "Spa professional since 14 years, I offer you my massages and treatments at home.",
+    "Spa professional since 17 years, I offer you my massages and treatments at home.",
   introText2:
     "I travel with all the necessary equipment to create a really relaxing space. I can also welcome you in Val Thorens (at my home) where a massage cabin is entirely dedicated to you.",
   introText3:
@@ -77,14 +77,14 @@ export const english = {
   soinVisageFemme7: "Collagen mask",
   soinVisageFemme7UnderTitle:
     "(Can be included in a facial treatment of your choice for women or men)",
-  soinVisageFemme1Price: "60 minutes : 80€",
-  soinVisageFemme2Price: "60 minutes : 80€",
-  soinVisageFemme3Price: "60 minutes : 80€",
-  soinVisageFemme4Price: "60 minutes : 80€",
-  soinVisageFemme5Price: "60 minutes : 80€",
-  soinVisageFemme6Price: "25 minutes : 50€",
-  soinVisageFemme7Price1: "Full face 20 minutes : 45€",
-  soinVisageFemme7Price2: "Eye contour 20 minutes : 35€",
+  soinVisageFemme1Price: "60 minutes : 90€",
+  soinVisageFemme2Price: "60 minutes : 90€",
+  soinVisageFemme3Price: "60 minutes : 90€",
+  soinVisageFemme4Price: "60 minutes : 90€",
+  soinVisageFemme5Price: "60 minutes : 90€",
+  soinVisageFemme6Price: "25 minutes : 60€",
+  soinVisageFemme7Price1: "Full face 20 minutes : 55€",
+  soinVisageFemme7Price2: "Eye contour 20 minutes : 55€",
 
   soinVisageFemme1Effects: "Sooting - hydrating - unifying",
   soinVisageFemme2Effects: "Repairing - nourishing - hydrating",

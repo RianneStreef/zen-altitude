@@ -102,14 +102,14 @@ const PriceListPage = function (props) {
             <span> {languageToUse.massage}</span>
           )}
         </Link>{" "}
-        <span>-</span>
-        <Link to="/price-list#soins-jambes">
+        {/* <span>-</span> */}
+        {/* <Link to="/price-list#soins-jambes">
           {screenWidth > 767 ? (
             <span>{languageToUse.product2Title}</span>
           ) : (
             <span> {languageToUse.legs}</span>
           )}
-        </Link>{" "}
+        </Link>{" "} */}
         <span>-</span>
         <Link to="/price-list#soins-visage">
           {screenWidth > 767 ? (
@@ -140,10 +140,10 @@ const PriceListPage = function (props) {
             />
           </div>
           <ul className="price-list-part">
-            <li>30 minutes : 50€</li>
-            <li>60 minutes : 80€</li>
-            <li>90 minutes : 120€</li>
-            <li>120 minutes : 150€</li>
+            <li>30 minutes : 60€</li>
+            <li>60 minutes : 90€</li>
+            <li>90 minutes : 130€</li>
+            <li>120 minutes : 160€</li>
           </ul>
         </div>
 
@@ -157,7 +157,7 @@ const PriceListPage = function (props) {
           <li>{languageToUse.product2Li3}</li>
         </ul>
 
-        <div className="price-list-container price-list-container-inverse">
+        {/* <div className="price-list-container price-list-container-inverse">
           <div className="price-list-images">
             <img
               src={soinJambes1}
@@ -169,7 +169,7 @@ const PriceListPage = function (props) {
           <ul className="price-list-part">
             <li>60 minutes: 95€</li>
           </ul>
-        </div>
+        </div> */}
         <div id="soins-visage" />
         <h2>{languageToUse.product3Title}</h2>
 
@@ -224,9 +224,7 @@ const PriceListPage = function (props) {
           </ul>
         </div>
         <h2>{languageToUse.travelExpenses}</h2>
-        <p>Val Thorens: 10€ par personne</p>
-        <p>Les Menuires: 20€ par personne</p>
-        <p>St Martin de Belleville: 20€ par personne</p>
+        <p>Sur devis</p>
 
         <div className="gift-voucher-container">
           <h2>{languageToUse.giftVoucher}</h2>

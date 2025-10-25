@@ -9,7 +9,6 @@ import Layout from "../../components/Layout";
 import Header from "../../components/Header";
 import Consent from "../../components/Consent";
 
-
 import { content } from "../../content/languages";
 import intakeInfo from "../../content/intake";
 
@@ -123,7 +122,7 @@ const MassagesPage = function (props) {
         </div>
       </div>
       <div className="center-button-container">
-        <Link to="/price-list" className="button">
+        <Link to="/en/price-list" className="button">
           {languageToUse.priceList}
         </Link>
       </div>

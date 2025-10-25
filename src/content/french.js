@@ -27,7 +27,7 @@ export const french = {
 
   welcome: "Bienvenue chez Zen Altitude ",
   introText1:
-    "Professionnelle du bien être depuis 14 ans, je vous propose mes services de massage et soins du visage à domicile.",
+    "Professionnelle du bien être depuis 17 ans, je vous propose mes services de massage et soins du visage à domicile.",
   introText2:
     "Je me déplace avec tout le matériel nécessaire afin de créer un véritable espace de détente et de relaxation. Je peux également vous accueillir à Val Thorens (à mon domicile) ou une cabine de massage vous est entièrement dédiée.",
 
@@ -81,14 +81,14 @@ export const french = {
   soinVisageFemme7: "Pause de masque au collagene",
   soinVisageFemme7UnderTitle: "(Uniquement en complément d'un soin du visage.)",
 
-  soinVisageFemme1Price: "60 minutes : 80€",
-  soinVisageFemme2Price: "60 minutes : 80€",
-  soinVisageFemme3Price: "60 minutes : 80€",
-  soinVisageFemme4Price: "60 minutes : 80€",
-  soinVisageFemme5Price: "60 minutes : 80€",
-  soinVisageFemme6Price: "25 minutes : 50€",
-  soinVisageFemme7Price1: "Visage entier 20 minutes : 45€",
-  soinVisageFemme7Price2: "Contour des yeux 20 minutes : 35€",
+  soinVisageFemme1Price: "60 minutes : 90€",
+  soinVisageFemme2Price: "60 minutes : 90€",
+  soinVisageFemme3Price: "60 minutes : 90€",
+  soinVisageFemme4Price: "60 minutes : 90€",
+  soinVisageFemme5Price: "60 minutes : 90€",
+  soinVisageFemme6Price: "25 minutes : 60€",
+  soinVisageFemme7Price1: "Visage entier 20 minutes : 55€",
+  soinVisageFemme7Price2: "Contour des yeux 20 minutes : 45€",
 
   soinVisageFemme1Effects: "Apaisant, hydratant, unifiant",
   soinVisageFemme2Effects: "Reparateur-nourrisant-hydratant",
@@ -122,9 +122,9 @@ export const french = {
   soinVisageHomme2: "L’HOMME",
   soinVisageHomme3: "BLACK CUMIN ",
 
-  soinVisageHomme1Price: "25 MINUTES : 50€",
-  soinVisageHomme2Price: "60 MINUTES : 80€",
-  soinVisageHomme3Price: "60 MINUTES : 80€",
+  soinVisageHomme1Price: "25 MINUTES : 60€",
+  soinVisageHomme2Price: "60 MINUTES : 90€",
+  soinVisageHomme3Price: "60 MINUTES : 90€",
 
   soinVisageHomme1Description: "Soin visage éclat de fraicheur et barbe douce",
   soinVisageHomme2Description:
