@@ -78,7 +78,7 @@ const HeaderPrice = (props) => {
         <ul className="links hidden-mobile" id="priceLinks">
           <li>
             <Link
-              to="/"
+              to={language === "english" ? "/en/" : "/"}
               className={`nav-link ${
                 pathname === "/" || pathname === "http://localhost:8000/"
                   ? "active"
@@ -91,7 +91,7 @@ const HeaderPrice = (props) => {
           </li>
           <li>
             <Link
-              to="/#soins"
+              to={language === "english" ? "/en/#soins" : "/#soins"}
               className={`nav-link ${
                 pathname === "/#soins" ||
                 pathname === "http://localhost:8000/#soins"
@@ -105,7 +105,7 @@ const HeaderPrice = (props) => {
           </li>
           <li>
             <Link
-              to="/#contact"
+              to={language === "english" ? "/en/#contact" : "/#contact"}
               className={`nav-link ${
                 pathname === "/#contact" ||
                 pathname === "http://localhost:8000/#contact"
@@ -119,7 +119,7 @@ const HeaderPrice = (props) => {
           </li>
           <li>
             <Link
-              to="/price-list"
+              to={language === "english" ? "/en/price-list" : "/price-list"}
               className={`nav-link ${
                 pathname === "https://zen-altitude.netlify.app/price-list" ||
                 pathname === "http://localhost:8000/price-list"
@@ -134,7 +134,8 @@ const HeaderPrice = (props) => {
 
           <li>
             <div className="set-language">
-              <button
+              <Link
+                to="/en/price-list"
                 onClick={() => handleSetLanguage("english")}
                 onKeyPress={() => handleSetLanguage("english")}
                 className="invisible-button"
@@ -146,9 +147,11 @@ const HeaderPrice = (props) => {
                     languageToUse.language === "english" ? "opaque" : "fade"
                   } `}
                 />
-              </button>
-              <button
+              </Link>
+              <Link
+                to="/price-list"
                 onClick={() => handleSetLanguage("french")}
+                onKeyPress={() => handleSetLanguage("french")}
                 className="invisible-button"
               >
                 <img
@@ -158,7 +161,7 @@ const HeaderPrice = (props) => {
                     languageToUse.language === "french" ? "opaque" : "fade"
                   } `}
                 />
-              </button>
+              </Link>
             </div>
           </li>
         </ul>
