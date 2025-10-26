@@ -131,7 +131,7 @@ export const english = {
   giftVoucher: "Offer a gift voucher",
   giftVoucherIntro: "",
 
-  travelExpenses: "Travel expenses",
+  travelExpenses: "Home massage — price upon request",
 
   massage: "Massage",
   legs: "Legs",

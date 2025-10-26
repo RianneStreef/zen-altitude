@@ -147,7 +147,7 @@ const PriceListPage = function (props) {
           </ul>
         </div>
 
-        <div id="soins-jambes" />
+        {/* <div id="soins-jambes" />
         <h2>{languageToUse.product2Title}</h2>
 
         <p>{languageToUse.product2Text1}</p>
@@ -155,7 +155,7 @@ const PriceListPage = function (props) {
           <li>{languageToUse.product2Li1}</li>
           <li>{languageToUse.product2Li2}</li>
           <li>{languageToUse.product2Li3}</li>
-        </ul>
+        </ul> */}
 
         {/* <div className="price-list-container price-list-container-inverse">
           <div className="price-list-images">
@@ -224,7 +224,7 @@ const PriceListPage = function (props) {
           </ul>
         </div>
         <h2>{languageToUse.travelExpenses}</h2>
-        <p>Sur devis</p>
+        {/* <p>Sur devis</p> */}
 
         <div className="gift-voucher-container">
           <h2>{languageToUse.giftVoucher}</h2>

@@ -146,16 +146,16 @@ const PriceListPage = function (props) {
             <li>120 minutes : 160€</li>
           </ul>
         </div>
-
+        {/* 
         <div id="soins-jambes" />
-        <h2>{languageToUse.product2Title}</h2>
+        <h2>{languageToUse.product2Title}</h2> */}
 
-        <p>{languageToUse.product2Text1}</p>
+        {/* <p>{languageToUse.product2Text1}</p>
         <ul>
           <li>{languageToUse.product2Li1}</li>
           <li>{languageToUse.product2Li2}</li>
           <li>{languageToUse.product2Li3}</li>
-        </ul>
+        </ul> */}
 
         {/* <div className="price-list-container price-list-container-inverse">
           <div className="price-list-images">
@@ -224,7 +224,7 @@ const PriceListPage = function (props) {
           </ul>
         </div>
         <h2>{languageToUse.travelExpenses}</h2>
-        <p>On demand</p>
+        {/* <p>On demand</p> */}
 
         <div className="gift-voucher-container">
           <h2>{languageToUse.giftVoucher}</h2>

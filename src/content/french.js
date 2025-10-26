@@ -135,7 +135,7 @@ export const french = {
   giftVoucher: "Offrez un bon cadeau",
   giftVoucherIntro: "",
 
-  travelExpenses: "Frais de déplacement",
+  travelExpenses: "Massage à domicile sur devis",
 
   massage: "Massage",
   legs: "Jambes",
