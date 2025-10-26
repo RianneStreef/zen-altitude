@@ -60,11 +60,11 @@ const Footer = (props) => {
                 </Link>
               </li>
 
-              <li className="footer-link-container">
+              {/* <li className="footer-link-container">
                 <Link to="/#soin-jambes" className="footer-link">
                   {languageToUse.product2Title}
                 </Link>
-              </li>
+              </li> */}
               <li className="footer-link-container">
                 <Link to="/soin-visage" className="footer-link">
                   {languageToUse.product3Title}
