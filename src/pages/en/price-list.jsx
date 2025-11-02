@@ -142,8 +142,8 @@ const PriceListPage = function (props) {
           <ul className="price-list-part">
             <li>30 minutes : 60€</li>
             <li>60 minutes : 90€</li>
-            <li>90 minutes : 130€</li>
-            <li>120 minutes : 160€</li>
+            <li>90 minutes : 140€</li>
+            <li>120 minutes : 170€</li>
           </ul>
         </div>
         {/* 
